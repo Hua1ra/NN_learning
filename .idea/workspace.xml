@@ -5,37 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CNN_MNIST.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CNN_visualization.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NST.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RNN.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResNet.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Transformers.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VAE.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViT.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat_bot.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradient_accumulation.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_captioning.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_saving.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softmax_w_temp.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transfer_learning.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/word_embeddings1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object_detection/project.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Diabetes.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/diabetes.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MNIST.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MNIST.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/t10k-labels-idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/t10k-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/train-images-idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/train-labels-idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/MNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/diabetes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/images/four.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/images/images.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/images/Без названия.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -72,6 +44,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Alexey/Projects/Udemy/NN_learning&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
