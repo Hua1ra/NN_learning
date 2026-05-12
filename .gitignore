@@ -1,2 +1,4 @@
 /source/
-/object_detection/resources/
+/object_detection/resources/CCTSDB/
+/object_detection/resources/tt100k_2021/
+/object_detection/resources/models/
