@@ -35,15 +35,65 @@ One more thing to notice is that all of the pictures have the same resolution of
 
 In this section I will explain my thoughts on model architecture. The main idea is to recreate the solution to Traffic Sign Detection task with the help of modern Visual Transformers and compare this two models. Therefore I propose to mix CNN layers with Visual Transformer blocks. Now I'll explain briefly my main idea and later there will be a full diagram with complete description.
 
-On the first step I want to use Convolutioinal Neural Networks to extract low-level features. We will not only extract features, but also reduce the size of the image to an acceptable size, so the Visual Transformer part can work normally. CNN part of the project is going to be very close to an original paper (1), but less complex, Visual Transformer is also going to be similar to an original paepr (3). I will also add a regression layer at the end. So let's conclude: at the begining we have a picure of shape (3, 640, 640); than we have a couple of CNN layers with 3 \* 3 filters, ReLU activation function and Max Pooling and Linear projection at the end; we now have a representations of shape approximatly (20, 20, 256); after that we'll add positional encoding to our representation vector; than we have the most important part - 6-8 blocks of Visual Transformer; at hte exit of ViT we have a picture representation of a shape (400, 256) - flattened CNN output vector; the last layer is the main head - a linear layer which gives us 5 values for each target (p, x, y, w, h) with a sigmoid activatin function. Almost on every step we will have a dropout regularization technique. The whole model is gonna be created with the bricks (subclasses) such as CNN, MultiheadAttention, Transformer etc.
+On the first step I want to use Convolutional Neural Networks to extract low-level features. We will not only extract features, but also reduce the size of the image to an acceptable size, so the Visual Transformer part can work normally. CNN part of the project is going to be very close to an original paper (1), but less complex, Visual Transformer is also going to be similar to an original paper (3). I will also add a regression layer at the end. So let's conclude: at the beginning we have a picture of shape (3, 640, 640); than we have a couple of CNN layers with 3 \* 3 filters, ReLU activation function and Max Pooling and Linear projection at the end; we now have a representations of shape approximately (20, 20, 256); after that we'll add positional encoding to our representation vector; than we have the most important part - 6-8 blocks of Visual Transformer; at the exit of ViT we have a picture representation of a shape (400, 256) - flattened CNN output vector; the last layer is the main head - a linear layer which gives us 5 values for each target (p, x, y, w, h) with a sigmoid activation function. Almost on every step we will have a dropout regularization technique. The whole model is gonna be created with the bricks (subclasses) such as CNN, MultiheadAttention, Transformer etc.
 
 
 
 ##### 3\) Model Training
 
-In this section I'll show objects and hyperparameters.
+In this section I'll show objects and hyperparameters. For the CNN part we have:
 
+1:
 
+5 Layers. Each layer consists of:
+
+&#x09;Conv2d(kernel\_size=3, stride=1, padding=1)
+
+&#x09;BatchNorm2d()
+
+&#x09;ReLU()
+
+&#x09;MaxPool2d(kernel\_size=2, stride=2)
+
+&#x09;Dropout2d(p=0.25)
+
+Dimensionality:
+
+&#x09;(3, 640, 640) -> (32, 320, 320) -> (64, 160, 160) -> (128, 80, 80) -> (256, 40, 40) -> (512, 20, 20)
+
+2: 
+
+Projection layer
+
+Dimensionality:
+
+&#x09;(20, 20, 512) -> (20, 20, 256)
+
+3:
+
+Parameter embedding layer
+
+4:
+
+8 Transformer layers. Each consists of:
+
+&#x09;LayerNorm(normalized\_shape=256)
+
+&#x09;MultiheadAttention(num\_heads=8, embed\_dim=256)
+
+&#x09;Residual
+
+&#x09;LayerNorm(normalized\_shape=256)
+
+&#x09;FeedForward(embed\_dim=256, expansion=4)
+
+5:
+
+Head
+
+&#x09;Linear(in\_features=256, out\_features=5)
+
+After that we have a (400, 5) vector of predictions. After .view(20, 20, 5) we'll achieve the data at the same format as the target labels. That data can be interpreted properly in the visualization part.
 
 
 
