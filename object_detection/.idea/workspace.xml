@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0eab9023-aaa0-48c5-b84f-05c975fd080e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CNN_MNIST.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CNN_visualization.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPT.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MNIST.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NST.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RNN.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResNet.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transformers.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VAE.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ViT.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../augmentation1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat_bot.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diabetes.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradient_accumulation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../image_captioning.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning_visualization1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model_saving.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nn_with_numpy1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/project.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../softmax_w_temp.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../training1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../training2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../training3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transfer_learning.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word_embeddings1.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="3Dnz6JzezO5oZD3p2Zl5FhSQdxP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Alexey/Projects/Udemy/NN_learning/object_detection",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-1f1b7bcced7d-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.29188.22" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0eab9023-aaa0-48c5-b84f-05c975fd080e" name="Changes" comment="" />
+      <created>1778932444890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778932444890</updated>
+    </task>
+    <servers />
+  </component>
+</project>
