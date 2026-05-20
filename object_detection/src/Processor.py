@@ -15,7 +15,7 @@ class DataProcessor:
                  labels_path='./resources/tt100k_2021/labels_all.json',):
         self.CNN_output = cnn_output # We have a 20 * 20 grid after CNN layers
         self.nums_per_pixel = 5 # For each pixel in the grid we have (probability, x, y, width, height)
-        self.base_path = base_path # Base path for images
+        self.base_path = base_path # Base path for images_old
         self.annotations_path = annotations_path # Path for annotations
         self.save_path = save_path # Path to save processed data
         self.labels_path = labels_path

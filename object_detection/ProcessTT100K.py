@@ -5,7 +5,7 @@ import torch
 from PIL import Image, ImageDraw
 from src.Processor import DataProcessor
 
-# Process all images
+# Process all images_old
 processor = DataProcessor()
 processor.process_labels()
 processor.process_all()
