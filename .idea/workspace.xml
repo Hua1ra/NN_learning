@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_generation/ImageGeneration1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_generation/notebooks/ImageGeneration1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_generation/Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_generation/Train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_generation/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/face_generation/documentation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_generation/generated_images/loss_history.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_generation/generated_images/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_generation/src/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_generation/src/Functions.py" afterDir="false" />
-    </list>
+    <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +21,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Hua1ra/NN_learning.git",
+    "accountId": "ae104de2-d5e2-4129-9a68-5bb1d8366e99"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -92,7 +89,20 @@
       <option name="presentableId" value="Default" />
       <updated>1774088803675</updated>
     </task>
+    <task id="LOCAL-00001" summary="face_id project">
+      <option name="closed" value="true" />
+      <created>1779551830250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779551830250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="face_id project" />
+    <option name="LAST_COMMIT_MESSAGE" value="face_id project" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
