@@ -3,6 +3,11 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/face_generation/models" />
+      <excludeFolder url="file://$MODULE_DIR$/face_generation/resources" />
+      <excludeFolder url="file://$MODULE_DIR$/learning/source" />
+      <excludeFolder url="file://$MODULE_DIR$/object_detection/models" />
+      <excludeFolder url="file://$MODULE_DIR$/object_detection/resources" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (NN_learning)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

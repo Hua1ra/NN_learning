@@ -9,7 +9,7 @@ def plot_losses(generator_losses, critic_losses, save_path='./generated_images/l
     plt.figure(figsize=(10, 5))
     plt.plot(generator_losses, alpha=0.8, color='red', label='Generator Loss')
     plt.plot(critic_losses, alpha=0.8, color='blue', label='Critic Loss')
-    plt.xlabel('Iteration (10k)')
+    plt.xlabel('Iteration (*500)')
     plt.ylabel('Loss')
     plt.legend()
     plt.grid(True, alpha=0.4)

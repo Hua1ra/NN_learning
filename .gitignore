@@ -1,5 +1,12 @@
+# Project
+/.venv/
+# Learning
 /learning/source/
+# Object Detection
 /object_detection/resources/
 /object_detection/models/
+# Face Generation
 /face_generation/resources/
 /face_generation/models/
+# Face ID
+/face_id/data/

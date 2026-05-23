@@ -25,15 +25,15 @@ critic = Critic().to(device)
 critic_optimizer = torch.optim.RMSprop(critic.parameters(), lr=5e-5)
 critic_lr_scheduler = torch.optim.lr_scheduler.StepLR(critic_optimizer, step_size=5, gamma=0.5)
 criterion = Loss()
-start_epoch = 0
-epoch_num = 50
+start_epoch = 1
+epoch_num = 101
 n_critic = 5
 generator_losses = []
 critic_losses = []
 # Load checkpoint
 checkpoint_name: str | None = None
 if checkpoint_name is not None:
-    checkpoint = torch.load('../models/' + checkpoint_name + '.pth', map_location=device)
+    checkpoint = torch.load('./models/' + checkpoint_name + '.pth')
     generator.load_state_dict(checkpoint['generator'])
     critic.load_state_dict(checkpoint['critic'])
     generator_optimizer.load_state_dict(checkpoint['generator_optimizer'])
