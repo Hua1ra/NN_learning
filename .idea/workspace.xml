@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change afterPath="$PROJECT_DIR$/face_id/cv2_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_id/data_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_id/database_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_id/detector_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_id/download_resnet101.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_id/src/Detector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_id/src/Extractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_id/.env" beforeDir="false" afterPath="$PROJECT_DIR$/face_id/src/CasiaWebface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_id/models/feature_extractor.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_id/models/yolov8n-face.pt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

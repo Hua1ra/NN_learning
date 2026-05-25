@@ -9,6 +9,7 @@
       <excludeFolder url="file://$MODULE_DIR$/object_detection/models" />
       <excludeFolder url="file://$MODULE_DIR$/object_detection/resources" />
       <excludeFolder url="file://$MODULE_DIR$/face_id/data" />
+      <excludeFolder url="file://$MODULE_DIR$/face_id/models" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (NN_learning)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
