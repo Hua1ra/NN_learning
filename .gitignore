@@ -10,5 +10,4 @@
 /face_generation/models/
 # Face ID
 /face_id/data/
-/face_id/models/
 /face_id/.env
