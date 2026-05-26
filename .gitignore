@@ -9,6 +9,6 @@
 /face_generation/resources/
 /face_generation/models/
 # Face ID
-/face_id/data/
-/face_id/models/
-/face_id/.env
+/face_recognition/data/
+/face_recognition/models/
+/face_recognition/.env

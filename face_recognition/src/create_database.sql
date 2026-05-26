@@ -2,7 +2,7 @@ CREATE EXTENSION IF NOT EXISTS vector;
 
 CREATE DATABASE face_recognition;
 
-CREATE TABLE person
+CREATE TABLE persons
 (
 	person_id SERIAL PRIMARY KEY,
 	first_name VARCHAR(32) NOT NULL,
@@ -19,4 +19,4 @@ CREATE TABLE records
 );
 
 ALTER TABLE records
-ADD CONSTRAINT records_person_fk FOREIGN KEY (person_id) REFERENCES person(person_id);
+ADD CONSTRAINT records_person_fk FOREIGN KEY (person_id) REFERENCES persons(person_id) ON DELETE CASCADE;

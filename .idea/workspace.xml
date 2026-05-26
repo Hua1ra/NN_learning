@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face_id/dbadmin_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face_id/src/ArcFace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face_id/src/DBAdmin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_id/download_resnet101.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_id/download_resnet101.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_id/src/create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/face_id/src/create_database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -43,39 +48,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.App.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CCTSDB.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CNN.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CasiaWebface.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CelebA.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DataProcessor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Embedding.executor&quot;: &quot;Run&quot;,
-    &quot;Python.FeedForward.executor&quot;: &quot;Run&quot;,
-    &quot;Python.LossFn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MultiHeadAttention.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Processor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SignDetectionModel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TT100K.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Train.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TrainValidateFn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TransformerBlock.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.validate.executor&quot;: &quot;Run&quot;,
-    &quot;Python.visualize.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Alexey/Projects/Udemy/NN_learning&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.App.executor": "Run",
+    "Python.CCTSDB.executor": "Run",
+    "Python.CNN.executor": "Run",
+    "Python.CasiaWebface.executor": "Run",
+    "Python.CelebA.executor": "Run",
+    "Python.DBAdmin.executor": "Run",
+    "Python.DataProcessor.executor": "Run",
+    "Python.Embedding.executor": "Run",
+    "Python.FeedForward.executor": "Run",
+    "Python.LossFn.executor": "Run",
+    "Python.MultiHeadAttention.executor": "Run",
+    "Python.Processor.executor": "Run",
+    "Python.SignDetectionModel.executor": "Run",
+    "Python.TT100K.executor": "Run",
+    "Python.Train.executor": "Run",
+    "Python.TrainValidateFn.executor": "Run",
+    "Python.TransformerBlock.executor": "Run",
+    "Python.db_admin.executor": "Run",
+    "Python.test.executor": "Debug",
+    "Python.validate.executor": "Run",
+    "Python.visualize.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Alexey/Projects/Udemy/NN_learning",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\face_generation\notebooks" />
