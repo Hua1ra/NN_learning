@@ -12,6 +12,10 @@ class CasiaWebface(torch.utils.data.Dataset):
         self.idx_path = idx_path
         self.idx_map = self.read_index()
 
+    def __del__(self):
+        if hasattr(self, 'f'):
+            self.f.close()
+
     def __getitem__(self, item):
         # Open file if needed
         if not hasattr(self, 'f'):
