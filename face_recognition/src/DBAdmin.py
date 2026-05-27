@@ -67,7 +67,13 @@ class DBAdmin:
                                 ''',
             'truncate_records': '''
                                 TRUNCATE TABLE records RESTART IDENTITY;
-                                '''
+                                ''',
+            'get_closest': '''
+                            SELECT record_id, person_id, embedding <=> %s::vector AS distance
+                            FROM records
+                            WHERE embedding <=> %s::vector < %s
+                            ORDER BY distance ASC;
+                           '''
         }
 
     def __del__(self):
@@ -148,3 +154,7 @@ class DBAdmin:
             self.conn.commit()
             return self.cur.fetchall()
         return '<WRONG_PASSWORD!>'
+
+    def get_closest(self, embedding, threshold=0.3):
+        self.cur.execute(self.queries['get_closest'], (embedding, embedding, threshold))
+        return self.cur.fetchall()

@@ -1,16 +1,27 @@
 import io
 import struct
 import torch
+import torchvision
 from PIL import Image
 
 class CasiaWebface(torch.utils.data.Dataset):
-    def __init__(self, rec_path, idx_path):
+    def __init__(self, rec_path, idx_path, transformer=None, mode='transformer'):
         super().__init__()
+        self.mode = mode
         # All records
         self.rec_path = rec_path
         # Index
         self.idx_path = idx_path
         self.idx_map = self.read_index()
+        # Transformer
+        self.transformer = transformer
+        if self.transformer is None:
+            self.transformer = torchvision.transforms.Compose([
+                torchvision.transforms.Resize((224, 224)),
+                torchvision.transforms.ToTensor(),
+                torchvision.transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                                 std=[0.229, 0.224, 0.225])
+            ])
 
     def __del__(self):
         if hasattr(self, 'f'):
@@ -35,6 +46,8 @@ class CasiaWebface(torch.utils.data.Dataset):
         image_bytes = self.f.read(record_length)
         image_object = io.BytesIO(image_bytes)
         image = Image.open(image_object).convert('RGB')
+        if self.mode == 'transformer':
+            image = self.transformer(image)
         return image, int(label)
 
     def __len__(self):
@@ -53,3 +66,9 @@ class CasiaWebface(torch.utils.data.Dataset):
                 # Keys start from 1
                 index_map[int(key) - 1] = offset
         return index_map
+
+    def set_mode(self, mode):
+        self.mode = mode
+
+    def get_mode(self):
+        return self.mode

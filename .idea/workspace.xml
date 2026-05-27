@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change afterPath="$PROJECT_DIR$/face_recognition/normalizer_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/src/Normalizer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/cv2_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/cv2_test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/data_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/data_test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/detector_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/detector_test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/download_resnet101.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/download_resnet101.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/normalizer_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/normalizer_test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/src/ArcFace.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/ArcFace.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/src/CasiaWebface.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/CasiaWebface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/DBAdmin.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/DBAdmin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/Detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/Detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/src/Normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/Normalizer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
