@@ -11,4 +11,5 @@
 # Face ID
 /face_recognition/data/
 /face_recognition/models/
+/face_recognition/checkpoints/
 /face_recognition/.env

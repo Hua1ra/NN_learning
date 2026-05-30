@@ -28,11 +28,16 @@ class DBAdmin:
                             FROM records
                             WHERE record_id = %s;
                             ''',
+            'find_person': '''
+                            SELECT person_id
+                            FROM persons
+                            WHERE first_name = %S AND last_name = %s AND surname = %s;
+                            ''',
             'add_person': '''
                             INSERT INTO persons (first_name, last_name, surname, birthdate)
                             VALUES
                             (%s, %s, %s, %s)
-                            RETURNING person_id;;
+                            RETURNING person_id;
                             ''',
             'add_record': '''
                             INSERT INTO records (person_id, embedding)
@@ -104,6 +109,10 @@ class DBAdmin:
 
     def get_record(self, record_id):
         self.cur.execute(self.queries['get_record'], (record_id, ))
+        return self.cur.fetchone()
+
+    def find_person(self, first_name, last_name, surname):
+        self.cur.execute(self.queries['find_person'], (first_name, last_name, surname))
         return self.cur.fetchone()
 
     def add_person(self, first_name, last_name, surname, birthdate):

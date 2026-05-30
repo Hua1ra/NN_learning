@@ -28,4 +28,8 @@ class Normalizer:
     def normalize_transform(self, image, left_eye, right_eye):
         image, left_eye, right_eye = Normalizer.normalize(image, left_eye, right_eye)
         image = self.transformer(image)
+        image = image.unsqueeze(0)
         return image, left_eye, right_eye
+
+    def transform(self, image):
+        return self.transformer(image).unsqueeze(0)

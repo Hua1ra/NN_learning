@@ -9,11 +9,12 @@ class Extractor(torch.nn.Module):
         self.extractor = torch.nn.Sequential(*list(self.model.children())[:-1])
         checkpoint = torch.load(model_path, weights_only=True)
         self.extractor.load_state_dict(checkpoint)
-        self.bottle_neck = torch.nn.Linear(2048, self.embed_size)
+        self.fc = torch.nn.Linear(2048, self.embed_size)
         self.batch_norm = torch.nn.BatchNorm1d(self.embed_size)
 
     def forward(self, img):
         img = self.extractor(img)
-        img = self.bottle_neck(img)
+        img = img.view(img.size(0), -1)
+        img = self.fc(img)
         img = self.batch_norm(img)
         return torch.nn.functional.normalize(img, p=2, dim=1)
