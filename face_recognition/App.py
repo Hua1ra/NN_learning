@@ -53,7 +53,7 @@ class FaceApp(QMainWindow):
         layout.addWidget(self.display_label)
         # Buttons
         btn_layout = QHBoxLayout()
-        self.btn_load = QPushButton('Load model')
+        self.btn_load = QPushButton('Reload models')
         self.btn_start = QPushButton('Start')
         self.btn_stop = QPushButton('Stop')
         self.btn_add = QPushButton('Add face')
@@ -62,19 +62,23 @@ class FaceApp(QMainWindow):
         layout.addLayout(btn_layout)
         # Connections
         # noinspection PyUnresolvedReferences
-        self.btn_load.clicked.connect(self.load_model)
+        self.btn_load.clicked.connect(lambda: self.load_model(self.detector_path,
+                                                              self.extractor_path))
         # noinspection PyUnresolvedReferences
         self.btn_start.clicked.connect(self.start_processing)
         # noinspection PyUnresolvedReferences
-        self.btn_add.clicked.connect(self.open_add_face_dialog)
-        # noinspection PyUnresolvedReferences
         self.btn_stop.clicked.connect(self.stop_processing)
+        # noinspection PyUnresolvedReferences
+        self.btn_add.clicked.connect(self.open_add_face_dialog)
         # Load models
         self.load_model(self.detector_path,
                         self.extractor_path)
 
     def load_model(self, detector_path, extractor_path):
         # Try to load every file.
+        if self.VideoThread is not None and self.VideoThread.is_running:
+            print('Cannot reload models while running video.')
+            return
         try:
             print('Loading Database...')
             self.dbadmin = DBAdmin(db_config=self.db_config)
@@ -94,10 +98,12 @@ class FaceApp(QMainWindow):
             self.normalizer = Normalizer()
             print('Normalizer loaded.')
         except Exception as e:
+            print('Failed to load models.')
             print(e)
+            self.print_info('Failed to load models.')
         finally:
             print('Ready to work.')
-            self.display_label.setText('Ready to work.')
+            self.print_info('Ready to work.')
 
     def start_processing(self):
         # Start the thread
@@ -107,9 +113,10 @@ class FaceApp(QMainWindow):
                                        self.dbadmin,
                                        self.device)
         self.VideoThread.change_pixmap_signal.connect(self.update_image)
+        self.VideoThread.error_signal.connect(self.print_info)
         self.VideoThread.start()
         print('Starting camera...')
-        self.display_label.setText('Starting camera...')
+        self.print_info('Starting camera...')
 
     def stop_processing(self):
         if self.VideoThread and self.VideoThread.is_running:
@@ -117,13 +124,30 @@ class FaceApp(QMainWindow):
             self.VideoThread.change_pixmap_signal.disconnect()
             self.display_label.clear()
             print('Terminated.')
-            self.display_label.setText('Terminated.')
+            self.print_info('Terminated.')
             self.VideoThread = None
 
     def open_add_face_dialog(self):
+        # Check errors
+        if self.detector is None:
+            print('No detector loaded.')
+            self.print_info('No detector loaded.')
+            return
+        if self.extractor is None:
+            print('No extractor loaded.')
+            self.print_info('No extractor loaded.')
+            return
+        if self.normalizer is None:
+            print('No normalizer loaded.')
+            self.print_info('No normalizer loaded.')
+            return
+        if self.dbadmin is None:
+            print('No database loaded.')
+            self.print_info('No database loaded.')
+            return
         # TODO: Check if person exists
         print('Adding faces...')
-        self.display_label.setText('Adding faces...')
+        self.print_info('Adding faces...')
         files, _ = QFileDialog.getOpenFileNames(self,
                                                 'Choose 5 - 15 photos',
                                                 '',
@@ -156,15 +180,15 @@ class FaceApp(QMainWindow):
                             print(f'No face detected on the image indexed: ({i})')
                             error_text = error_text + f'No face detected on the image indexed: ({i})\n'
                     if error_text:
-                            self.display_label.setText(error_text)
+                            self.print_info(error_text)
                     else:
                         print(f'Added {len(files)} photos successfully.')
-                        self.display_label.setText(f'Added {len(files)} photos successfully.')
+                        self.print_info(f'Added {len(files)} photos successfully.')
         else:
             print('Error. Not enough photos.')
             QMessageBox.warning(self,
                                 'Error',
-                                'Choose 5 - 15 photos.')
+                                'Choose 1 - 15 photos.')
 
     def update_image(self, qt_img):
         # Update QLabel
@@ -172,6 +196,9 @@ class FaceApp(QMainWindow):
             self.display_label.size(),
             Qt.AspectRatioMode.KeepAspectRatio
         ))
+
+    def print_info(self, error_message):
+        self.display_label.setText(error_message)
 
 
 

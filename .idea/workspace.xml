@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change afterPath="$PROJECT_DIR$/face_recognition/App.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/FineTuning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/fine_tuning_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/save_model_from_checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/src/AddFaceDialog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/src/Functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/src/ValDataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_recognition/test_val_dataloader.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/data_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/data_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/dbadmin_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/dbadmin_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/detector_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/detector_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/DBAdmin.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/DBAdmin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/Detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/Detector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/Extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/Extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/Normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/Normalizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
