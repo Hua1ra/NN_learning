@@ -74,6 +74,19 @@ class FaceApp(QMainWindow):
         self.load_model(self.detector_path,
                         self.extractor_path)
 
+    def closeEvent(self, event):
+        reply = QMessageBox.question(self,
+                                     'Exit',
+                                     'Are you sure you want to quit?',
+                                     QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+        if reply == QMessageBox.StandardButton.Yes:
+            self.stop_processing()
+            print('Exit.')
+            self.print_info('Exit.')
+            event.accept()
+        else:
+            event.ignore()
+
     def load_model(self, detector_path, extractor_path):
         # Try to load every file.
         if self.VideoThread is not None and self.VideoThread.is_running:
@@ -123,9 +136,9 @@ class FaceApp(QMainWindow):
             self.VideoThread.stop()
             self.VideoThread.change_pixmap_signal.disconnect()
             self.display_label.clear()
+            self.VideoThread = None
             print('Terminated.')
             self.print_info('Terminated.')
-            self.VideoThread = None
 
     def open_add_face_dialog(self):
         # Check errors
@@ -159,10 +172,6 @@ class FaceApp(QMainWindow):
                 # Get the information
                 data = dialog.get_data()
                 # Push a person into the database
-                index = self.dbadmin.add_person(data['first_name'],
-                                                data['last_name'],
-                                                data['surname'],
-                                                data['birthdate'])
                 with torch.no_grad():
                     # Try to add all records
                     error_text = ''
@@ -171,6 +180,10 @@ class FaceApp(QMainWindow):
                         # Try to detect faces
                         cropped_image, left_eye, right_eye, rectangle = self.detector(img)
                         if cropped_image is not None:
+                            index = self.dbadmin.add_person(data['first_name'],
+                                                            data['last_name'],
+                                                            data['surname'],
+                                                            data['birthdate'])
                             # TODO: normalize_transform?
                             cropped_image = self.normalizer.transform(cropped_image)
                             cropped_image = cropped_image.to(self.device)

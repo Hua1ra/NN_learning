@@ -67,7 +67,7 @@ last_epoch = 50
 epoch_loss_dynamic = []
 
 # Checkpoint
-chechpoint_path: str | None = 'checkpoint4'
+chechpoint_path: str | None = 'checkpoint2'
 if chechpoint_path is not None:
     checkpoint = torch.load('./checkpoints/' + chechpoint_path + '.pth')
     extractor.load_state_dict(checkpoint['model'])

@@ -73,7 +73,7 @@ class VideoThread(QThread):
                         embedding = self.extractor(cropped_image)[0]
                         # TODO: reaccess bd every n frames
                         closest = self.dbadmin.get_closest(embedding.tolist(),
-                                                           threshold=0.6)
+                                                           threshold=0.87)
                         # Get the name
                         if closest:
                             closest = closest[0]
