@@ -175,28 +175,36 @@ class FaceApp(QMainWindow):
                 with torch.no_grad():
                     # Try to add all records
                     error_text = ''
+                    error_count = 0
+                    index = self.dbadmin.add_person(data['first_name'],
+                                                    data['last_name'],
+                                                    data['surname'],
+                                                    data['birthdate'])
+                    print(f'Person {index} added.')
                     for i, file in enumerate(files):
                         img = Image.open(file).convert('RGB')
                         # Try to detect faces
                         cropped_image, left_eye, right_eye, rectangle = self.detector(img)
                         if cropped_image is not None:
-                            index = self.dbadmin.add_person(data['first_name'],
-                                                            data['last_name'],
-                                                            data['surname'],
-                                                            data['birthdate'])
                             # TODO: normalize_transform?
                             cropped_image = self.normalizer.transform(cropped_image)
                             cropped_image = cropped_image.to(self.device)
                             embedding = self.extractor(cropped_image)[0]
                             self.dbadmin.add_record(index, embedding.cpu().tolist())
                         else:
-                            print(f'No face detected on the image indexed: ({i})')
                             error_text = error_text + f'No face detected on the image indexed: ({i})\n'
+                            error_count += 1
                     if error_text:
+                            error_text = error_text + f'Added {len(files) - error_count} photos.'
+                            print(error_text)
                             self.print_info(error_text)
                     else:
                         print(f'Added {len(files)} photos successfully.')
                         self.print_info(f'Added {len(files)} photos successfully.')
+                    if error_count == len(files):
+                        self.dbadmin.delete_person(index, True)
+                        print('No valid photos in the batch. Deleting person.')
+                        self.print_info('No valid photos in the batch. Deleting person.')
         else:
             print('Error. Not enough photos.')
             QMessageBox.warning(self,

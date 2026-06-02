@@ -7,10 +7,7 @@
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/FineTuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/FineTuning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/dbadmin_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/dbadmin_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/documentation/loss_dynamic.png" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/documentation/loss_dynamic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/save_model_from_checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/save_model_from_checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
