@@ -23,7 +23,7 @@ data_loader = torch.utils.data.DataLoader(dataset=dataset,
 model = SignDetectionModel().to(device)
 # Load the existing model
 if last_checkpoint is not None:
-    checkpoint = torch.load(f'./resources/models/{last_checkpoint}.pth', map_location=device)
+    checkpoint = torch.load(f'./models/{last_checkpoint}.pth', map_location=device)
     model.load_state_dict(checkpoint['model_state_dict'])
 
 # Final validation

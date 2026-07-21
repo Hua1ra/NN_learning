@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
+      <change afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/FineTuning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/ModelFromCheckpoint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/documentation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/documentation/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/documentation/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/AudioController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/BERT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/Brain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/Database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/Loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/MicController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/RequestsDataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/src/YMController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/test/audio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/test/bert_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/test/yandex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning/cv2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NN_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NN_learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/dbadmin_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/dbadmin_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/image_captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/learning/image_captioning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_detection/Validate.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_detection/Validate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_detection/src/TrainValidateFn.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_detection/src/TrainValidateFn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,7 +60,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -53,6 +74,8 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.App.executor&quot;: &quot;Run&quot;,
+    &quot;Python.AudioController.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Brain.executor&quot;: &quot;Run&quot;,
     &quot;Python.CCTSDB.executor&quot;: &quot;Run&quot;,
     &quot;Python.CNN.executor&quot;: &quot;Run&quot;,
     &quot;Python.CasiaWebface.executor&quot;: &quot;Run&quot;,
@@ -63,6 +86,7 @@
     &quot;Python.FeedForward.executor&quot;: &quot;Run&quot;,
     &quot;Python.FineTuning.executor&quot;: &quot;Run&quot;,
     &quot;Python.LossFn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ModelFromCheckpoint.executor&quot;: &quot;Run&quot;,
     &quot;Python.MultiHeadAttention.executor&quot;: &quot;Run&quot;,
     &quot;Python.Processor.executor&quot;: &quot;Run&quot;,
     &quot;Python.SignDetectionModel.executor&quot;: &quot;Run&quot;,
@@ -70,11 +94,23 @@
     &quot;Python.Train.executor&quot;: &quot;Run&quot;,
     &quot;Python.TrainValidateFn.executor&quot;: &quot;Run&quot;,
     &quot;Python.TransformerBlock.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Validate.executor&quot;: &quot;Run&quot;,
     &quot;Python.VideoThread.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Visualize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.YMController.executor&quot;: &quot;Run&quot;,
+    &quot;Python.audio.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bert_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.datatest.executor&quot;: &quot;Run&quot;,
     &quot;Python.db_admin.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fastapi_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main1.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;Python.validate.executor&quot;: &quot;Run&quot;,
     &quot;Python.visualize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.yandex.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
@@ -82,16 +118,17 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Alexey/Projects/Udemy/NN_learning&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Images&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning\face_recognition\src" />
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning\face_generation\notebooks" />
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning\face_generation" />
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning" />
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\test" />
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis" />
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\Inference" />
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\learning" />
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\learning\FastAPI" />
     </key>
   </component>
   <component name="SharedIndexes">

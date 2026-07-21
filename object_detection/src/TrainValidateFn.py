@@ -11,7 +11,7 @@ def validate(data_loader, model, device):
         pos_count, neg_count = 0, 0
         # For each image we calculate predictions
         # For each prediction we calculate confidence accuracy
-        for images, labels in tqdm(data_loader):
+        for images, labels in tqdm.tqdm(data_loader):
             images = images.to(device)
             labels = labels.view(-1, 20 * 20, 5).to(device)
             predictions = torch.sigmoid(model(images))[:, :, 0]
@@ -30,7 +30,7 @@ def validate(data_loader, model, device):
 def train_epoch(data_loader, model, optimizer, criterion, device):
     model.train()
     running_loss = 0.0
-    tqdm_loader = tqdm(data_loader)
+    tqdm_loader = tqdm.tqdm(data_loader)
     # Standart learning cycle
     for i, (images, labels) in enumerate(tqdm_loader):
         images = images.to(device)
@@ -188,7 +188,7 @@ def final_validation(model, device, data_loader, min_confidence=0.5):
     total_tp, total_fp, total_fn, total_tn = 0, 0, 0, 0
     # For each image
     with torch.no_grad():
-        for images, labels in tqdm(data_loader):
+        for images, labels in tqdm.tqdm(data_loader):
             images = images.to(device)
             labels = labels.to(device).view(-1, 20, 20, 5)
             outputs = model(images).view(-1, 20, 20, 5)

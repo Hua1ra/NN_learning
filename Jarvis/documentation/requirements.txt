@@ -1,0 +1,14 @@
+torch
+torch_directml
+transformers
+scikit-learn
+tqdm
+python-vlc
+yandex-music
+sounddevice
+matplotlib
+seaborn
+keyboard
+flet
+numpy
+python-dotenv
