@@ -1,6 +1,7 @@
 import dotenv
 import logging
 import os
+from pathlib import Path
 import sys
 import vlc
 
@@ -8,7 +9,7 @@ import vlc
 
 class AudioController:
     def __init__(self):
-        dotenv.load_dotenv()
+        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         try:
             self.instance = vlc.Instance()
             self.player = self.instance.media_player_new()

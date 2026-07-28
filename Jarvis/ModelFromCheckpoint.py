@@ -1,8 +1,18 @@
 import dotenv
 import os
+from pathlib import Path
+import sys
 import torch
 import torch_directml # type: ignore
 from Jarvis.src.BERT import IntentTokenClassifier
+
+
+
+def get_base_path():
+    if getattr(sys, 'frozen', False):
+        return Path(getattr(sys, '_MEIPASS', ''))
+    else:
+        return Path(__file__).resolve().parent.parent
 
 def get_model_from_checkpoint(start_path, end_path):
     checkpoint = torch.load(start_path)
@@ -15,9 +25,10 @@ def get_model_from_checkpoint(start_path, end_path):
 
 
 def main():
-    dotenv.load_dotenv()
-    start_path = os.getenv('CHECKPOINT')
-    end_path = os.getenv('MODEL')
+    dotenv.load_dotenv(Path(__file__).resolve().parent / '.env.client')
+    basic_path = get_base_path()
+    start_path = (basic_path / os.getenv('CHECKPOINT')).resolve()
+    end_path = (basic_path / os.getenv('MODEL')).resolve()
     get_model_from_checkpoint(start_path, end_path)
 
 

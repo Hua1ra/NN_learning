@@ -3,19 +3,26 @@ import dotenv
 import flet as ft
 import logging
 import os
+from pathlib import Path
+import requests
 import sounddevice as sd
 import sys
 import threading
 import hashlib
 import yandex_music
-from Jarvis.src.Brain import Brain
-from Jarvis.src.Database import Database
+from src.Brain import Brain
 
 
 
-dotenv.load_dotenv()
+def get_base_path():
+    if getattr(sys, 'frozen', False):
+        return Path(getattr(sys, '_MEIPASS', ''))
+    else:
+        return Path(__file__).resolve().parent
+
+dotenv.load_dotenv(Path(__file__).resolve().parent / '.env.client')
 logging.basicConfig(
-    filename=os.getenv('LOGGING'),
+    filename=(get_base_path() / os.getenv('LOGGING')).resolve(),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     encoding='utf-8'
@@ -28,7 +35,7 @@ class JarvisApp:
         self.page: ft.Page | None = None
 
         self.brain: Brain | None = None
-        self.db = Database()
+        self.db_url = os.getenv('DB_URL')
         self.is_playing = False
         self.stop_worker = threading.Event()
         self.ym_token = None
@@ -80,9 +87,9 @@ class JarvisApp:
                                           can_reveal_password=True,
                                           width=200,
                                           text_size=14)
-        self.auth_btn = ft.ElevatedButton('Enter',
-                                          on_click=self.handle_login,
-                                          width=200)
+        self.auth_btn = ft.Button('Enter',
+                                  on_click=self.handle_login,
+                                  width=200)
         self.auth_error_msg = ft.Text(value='',
                                       color=ft.Colors.RED_ACCENT,
                                       size=12,
@@ -117,16 +124,33 @@ class JarvisApp:
 
     def check_user_in_db(self, username, password):
         password = self.hash_password(password)
-        return self.db.check_user_in_db(username, password)
+        response = requests.post(
+            f'{self.db_url}/auth/check',
+            json={'username': username, 'password': password}
+        )
+        if response.status_code == 200:
+            return response.json().get('exists', False)
+        return False
 
     def save_user_to_db(self, username, password):
         password = self.hash_password(password)
-        self.db.save_user_to_db(username, password, self.ym_token)
+        requests.post(
+            f'{self.db_url}/auth/save',
+            json={'username': username, 'password': password, 'token': self.ym_token}
+        )
 
     def get_token_from_db(self, username, password):
         password = self.hash_password(password)
         try:
-            return self.db.get_token(username, password)
+            response = requests.post(
+                f'{self.db_url}/auth/token',
+                json={'username': username, 'password': password}
+            )
+            if response.status_code == 200:
+                return response.json().get('token')
+            else:
+                logging.error('Token error')
+                sys.exit(1)
         except Exception as e:
             logging.error(e)
             sys.exit(1)
@@ -240,7 +264,6 @@ class JarvisApp:
     async def window_event_handler(self, e):
         if e.type == ft.WindowEventType.CLOSE:
             logging.info('Closing app')
-            self.db.close()
             if self.brain is not None:
                 self.stop_worker.set()
                 self.brain.exit()

@@ -1,12 +1,13 @@
 import dotenv
 import os
+from pathlib import Path
 import torch
 from transformers import AutoModel
 
 class IntentTokenClassifier(torch.nn.Module):
     def __init__(self):
         super().__init__()
-        dotenv.load_dotenv()
+        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         self.bert = AutoModel.from_pretrained(os.getenv('BERT_MODEL'))
         for param in self.bert.parameters():
             param.requires_grad = True

@@ -1,5 +1,7 @@
+import dotenv
 import logging
 import os
+from pathlib import Path
 import sys
 import random
 
@@ -7,6 +9,7 @@ import random
 
 class YMController:
     def __init__(self, client, device):
+        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         self.client = client # Client for yandex_music requests
         self.device = device # Current user device
 

@@ -1,20 +1,23 @@
 import json
+import dotenv
 import keyboard
 import logging
 import os
+from pathlib import Path
 import sys
 import random
 import time
 import yandex_music
 import vlc
-from Jarvis.src.AudioController import AudioController
-from Jarvis.src.MicController import MicController
-from Jarvis.src.YMController import YMController
+from src.AudioController import AudioController
+from src.MicController import MicController
+from src.YMController import YMController
 
 
 
 class Brain:
     def __init__(self, token, device):
+        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         try:
             self.token = token
             self.device = device
@@ -27,7 +30,8 @@ class Brain:
 
             self.miccontroller = MicController()
 
-            with open(os.getenv('RADIO_PATH'), 'r') as j:
+            self.basic_path = self.get_base_path()
+            with open((self.basic_path / os.getenv('RADIO_PATH')).resolve(), 'r') as j:
                 self.radio = json.load(j)
             self.is_track_ended = False
             self.was_playing = False
@@ -35,6 +39,13 @@ class Brain:
         except Exception as e:
             logging.error(e)
             sys.exit(1)
+
+    @staticmethod
+    def get_base_path():
+        if getattr(sys, 'frozen', False):
+            return Path(getattr(sys, '_MEIPASS', ''))
+        else:
+            return Path(__file__).resolve().parent.parent
 
     def processor(self, intent, tokens=None):
         has_params = (intent in ('play_track', 'play_artist', 'play_album', 'play_playlist', 'set_volume'))

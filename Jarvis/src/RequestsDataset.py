@@ -1,6 +1,7 @@
 import dotenv
 import json
 import os
+from pathlib import Path
 import random
 import torch
 from transformers import AutoTokenizer
@@ -8,7 +9,7 @@ from transformers import AutoTokenizer
 class RequestsDataset(torch.utils.data.Dataset):
     def __init__(self, is_train=True):
         super().__init__()
-        dotenv.load_dotenv()
+        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         self.is_train = is_train
         self.tokenizer = AutoTokenizer.from_pretrained(os.getenv('BERT_MODEL'))
         with open(os.getenv('INTENTS_PATH'), 'r') as j:

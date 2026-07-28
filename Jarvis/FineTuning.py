@@ -2,6 +2,7 @@ import dotenv
 import os
 import matplotlib.pyplot as plt
 import numpy as np
+from pathlib import Path
 import seaborn as sns
 import torch
 import torch_directml
@@ -136,7 +137,7 @@ def save_model(model,
 
 
 def main(checkpoint_path=None):
-    dotenv.load_dotenv()
+    dotenv.load_dotenv(Path(__file__).resolve().parent / '.env.client')
     device = 'cpu'
     if torch.cuda.is_available():
         device = 'cuda'

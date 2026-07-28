@@ -4,6 +4,7 @@ import json
 import logging
 import numpy as np
 import os
+from pathlib import Path
 import re
 import sys
 import torch
@@ -11,18 +12,19 @@ import transformers
 import wave
 from openwakeword import Model
 from faster_whisper import WhisperModel
-from Jarvis.src.BERT import IntentTokenClassifier
+from src.BERT import IntentTokenClassifier
 
 
 
 class MicController:
     def __init__(self):
         transformers.logging.set_verbosity_error()
-        dotenv.load_dotenv()
+        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
+        self.basic_path = self.get_base_path()
         try:
-            with open(os.getenv('INTENTS_PATH'), 'r') as j:
+            with open((self.basic_path / os.getenv('INTENTS_PATH')).resolve(), 'r') as j:
                 self.intent_to_id = json.load(j)
-            with open(os.getenv('TOKENS_PATH'), 'r') as j:
+            with open((self.basic_path / os.getenv('TOKENS_PATH')).resolve(), 'r') as j:
                 self.token_to_id = json.load(j)
             self.pr_labels = list(map(int, os.getenv('PR_LABELS').split(',')))
             self.id_to_intent = {v : k for k, v in self.intent_to_id.items()}
@@ -31,7 +33,7 @@ class MicController:
             self.rec_model = WhisperModel(os.getenv('WHISPER_MODEL'), device='cpu', compute_type='int8')
             self.tokenizer = transformers.AutoTokenizer.from_pretrained(os.getenv('BERT_MODEL'))
             self.classifier_model = IntentTokenClassifier()
-            self.classifier_model.load_state_dict(torch.load(os.getenv('MODEL'), weights_only=True))
+            self.classifier_model.load_state_dict(torch.load((self.basic_path / os.getenv('MODEL')).resolve(), weights_only=True))
 
             self.oww_recognized = False
             self.command_chunks = []
@@ -39,6 +41,13 @@ class MicController:
         except Exception as e:
             logging.error(e)
             sys.exit(1)
+
+    @staticmethod
+    def get_base_path():
+        if getattr(sys, 'frozen', False):
+            return Path(getattr(sys, '_MEIPASS', ''))
+        else:
+            return Path(__file__).resolve().parent.parent
 
     def stt(self, audio_data):
         try:

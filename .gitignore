@@ -17,4 +17,5 @@
 /Jarvis/data/
 /Jarvis/models/
 /Jarvis/logs/
-/Jarvis/.env
+/Jarvis/.env.client
+/Jarvis/back/.env.back
