@@ -12,7 +12,7 @@ import transformers
 import wave
 from openwakeword import Model
 from faster_whisper import WhisperModel
-from src.BERT import IntentTokenClassifier
+from src.BERT import IntentTokenClassifier #type: ignore
 
 
 
@@ -30,8 +30,8 @@ class MicController:
             self.id_to_intent = {v : k for k, v in self.intent_to_id.items()}
             self.id_to_token = {v: k for k, v in self.token_to_id.items()}
             self.oww_model = Model(wakeword_models=[os.getenv('OWW_MODEL')], inference_framework=os.getenv('OWW_FRAMEWORK'))
-            self.rec_model = WhisperModel(os.getenv('WHISPER_MODEL'), device='cpu', compute_type='int8')
-            self.tokenizer = transformers.AutoTokenizer.from_pretrained(os.getenv('BERT_MODEL'))
+            self.rec_model = WhisperModel(str((self.basic_path / os.getenv('WHISPER_MODEL')).resolve()), device='cpu', compute_type='int8')
+            self.tokenizer = transformers.AutoTokenizer.from_pretrained((self.basic_path / os.getenv('BERT_MODEL')).resolve())
             self.classifier_model = IntentTokenClassifier()
             self.classifier_model.load_state_dict(torch.load((self.basic_path / os.getenv('MODEL')).resolve(), weights_only=True))
 

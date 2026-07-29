@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change afterPath="$PROJECT_DIR$/Jarvis/back/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jarvis/back/Server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jarvis/back/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jarvis/back/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/asdas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jarvis/create.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NN_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NN_learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/FineTuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/FineTuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/ModelFromCheckpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/ModelFromCheckpoint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/AudioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/AudioController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/BERT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/BERT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/TODO_list.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis/src/Brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Brain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/Database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/Loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Loss.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis/src/MicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/MicController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/RequestsDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/RequestsDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/YMController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/YMController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/test/audio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/test/bert_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/test/yandex.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +87,7 @@
     "Python.VideoThread.executor": "Run",
     "Python.Visualize.executor": "Run",
     "Python.YMController.executor": "Run",
+    "Python.asdas.executor": "Run",
     "Python.audio.executor": "Run",
     "Python.bert_test.executor": "Run",
     "Python.data_test.executor": "Run",
@@ -117,11 +114,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning" />
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\checkpoints" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\back" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\test" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis" />
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\Inference" />
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning\learning" />
     </key>
   </component>
   <component name="SharedIndexes">

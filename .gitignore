@@ -14,9 +14,10 @@
 /face_recognition/checkpoints/
 /face_recognition/.env
 # Jarvis
-/Jarvis/data/
 /Jarvis/models/
 /Jarvis/logs/
+/Jarvis/dist/
+/Jarvis/build/
 /Jarvis/.env.client
 /Jarvis/back/.env.back
 /Jarvis/checkpoints/

@@ -9,9 +9,9 @@ import random
 import time
 import yandex_music
 import vlc
-from src.AudioController import AudioController
-from src.MicController import MicController
-from src.YMController import YMController
+from src.AudioController import AudioController #type: ignore
+from src.MicController import MicController #type: ignore
+from src.YMController import YMController #type: ignore
 
 
 

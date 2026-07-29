@@ -20,9 +20,14 @@ def get_base_path():
     else:
         return Path(__file__).resolve().parent
 
-dotenv.load_dotenv(Path(__file__).resolve().parent / '.env.client')
+def get_writable_path():
+    if getattr(sys, 'frozen', False):
+        return Path(sys.executable).resolve().parent
+    return Path(__file__).resolve().parent
+
+dotenv.load_dotenv(get_base_path() / '.env.client')
 logging.basicConfig(
-    filename=(get_base_path() / os.getenv('LOGGING')).resolve(),
+    filename=get_writable_path() / os.getenv('LOGGING'),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     encoding='utf-8'

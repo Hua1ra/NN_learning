@@ -1,0 +1,21 @@
+{
+  "play_track": 0,
+  "play_artist": 1,
+  "play_album": 2,
+  "play_playlist": 3,
+  "play_wave": 4,
+  "play_favourite": 5,
+  "play_random_radio": 6,
+  "track_next": 7,
+  "track_prev": 8,
+  "track_pause": 9,
+  "track_resume": 10,
+  "volume_up": 11,
+  "volume_down": 12,
+  "set_volume": 13,
+  "like": 14,
+  "dislike": 15,
+  "ask_current_track": 16,
+  "other": 17,
+  "exit": 18
+}

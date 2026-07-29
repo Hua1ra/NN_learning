@@ -1,0 +1,18 @@
+{
+    "0": "user:hits",
+    "1": "user:discover",
+    "2": "user:new",
+    "3": "genre:rock",
+    "4": "genre:pop",
+    "5": "genre:classic",
+    "6": "genre:hip-hop",
+    "7": "genre:electronic",
+    "8": "mood:sad",
+    "9": "mood:happy",
+    "10": "mood:energetic",
+    "11": "mood:calm",
+    "12": "mood:aggressive",
+    "13": "activity:roadtrip",
+    "14": "activity:workout",
+    "15": "activity:party"
+}

@@ -1,0 +1,7956 @@
+[
+  {
+    "words": [
+      "включи",
+      "песню",
+      "Shape",
+      "of",
+      "You"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "запусти",
+      "трек",
+      "Абракадабра"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "сыграй",
+      "композицию",
+      "Hotel",
+      "California"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включить",
+      "музыку",
+      "Billie",
+      "Jean"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "поставь",
+      "песню",
+      "В",
+      "последний",
+      "раз"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "Smells",
+      "Like",
+      "Teen",
+      "Spirit"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включи",
+      "трек",
+      "Imagine"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "запусти",
+      "композицию",
+      "Посмотри",
+      "в",
+      "глаза"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "сыграй",
+      "песню",
+      "Wonderwall"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "Let",
+      "It",
+      "Be"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включи",
+      "музыкальный",
+      "трек",
+      "Хватит",
+      "довольно"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "поставь",
+      "композицию",
+      "Back",
+      "in",
+      "Black"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "запусти",
+      "песню",
+      "Sweet",
+      "Child",
+      "O'Mine"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включить",
+      "трек",
+      "Smooth",
+      "Criminal"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "сыграй",
+      "трек",
+      "Purple",
+      "Haze"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "песню",
+      "My",
+      "Heart",
+      "Will",
+      "Go",
+      "On"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "поставь",
+      "музыку",
+      "Lose",
+      "Yourself"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включи",
+      "композицию",
+      "Я",
+      "твой",
+      "номер",
+      "один"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "запусти",
+      "трек",
+      "Dancing",
+      "Queen"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "сыграй",
+      "песню",
+      "Hey",
+      "Jude"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "трек",
+      "Viva",
+      "la",
+      "Vida"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включи",
+      "песню",
+      "Экспонат"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "поставь",
+      "композицию",
+      "Poker",
+      "Face"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "запусти",
+      "музыкальный",
+      "трек",
+      "Hallelujah"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "сыграй",
+      "композицию",
+      "Nothing",
+      "Else",
+      "Matters"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "песню",
+      "Time",
+      "to",
+      "Say",
+      "Goodbye"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включи",
+      "трек",
+      "Gangnam",
+      "Style"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "поставь",
+      "песню",
+      "Toxic"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "запусти",
+      "композицию",
+      "What",
+      "a",
+      "Wonderful",
+      "World"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включить",
+      "трек",
+      "Don't",
+      "Stop",
+      "Me",
+      "Now"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_track"
+  },
+  {
+    "words": [
+      "включи",
+      "исполнителя",
+      "The",
+      "Beatles"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "запусти",
+      "артиста",
+      "Michael",
+      "Jackson"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "группу",
+      "Кино"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включить",
+      "музыку",
+      "Eminem"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "поставь",
+      "исполнителя",
+      "Taylor",
+      "Swift"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "Руки",
+      "Вверх"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включи",
+      "артиста",
+      "Mad",
+      "Kid"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "запусти",
+      "исполнителя",
+      "Drake"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "артиста",
+      "Rihanna"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "Bruno",
+      "Mars"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включи",
+      "музыкального",
+      "исполнителя",
+      "Kanye",
+      "West"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "поставь",
+      "группу",
+      "Red",
+      "Hot",
+      "Chili",
+      "Peppers"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "запусти",
+      "артиста",
+      "Lady",
+      "Gaga"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включить",
+      "исполнителя",
+      "Градусы"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "музыку",
+      "Nirvana"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "артиста",
+      "Billie",
+      "Eilish"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "поставь",
+      "исполнителя",
+      "The",
+      "Weeknd"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включи",
+      "группу",
+      "Pink",
+      "Floyd"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "запусти",
+      "музыку",
+      "Linkin",
+      "Park"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "исполнителя",
+      "Ваня",
+      "Дмитриенко"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "группу",
+      "Imagine",
+      "Dragons"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включи",
+      "артиста",
+      "Elvis",
+      "Presley"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "поставь",
+      "музыкального",
+      "исполнителя",
+      "Инна"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "запусти",
+      "группу",
+      "The",
+      "Rolling",
+      "Stones"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "артиста",
+      "Ariana",
+      "Grande"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "исполнителя",
+      "Metallica"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включи",
+      "музыку",
+      "The",
+      "Doors"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "поставь",
+      "артиста",
+      "Sia"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "запусти",
+      "исполнителя",
+      "Twenty",
+      "One",
+      "Pilots"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включить",
+      "группу",
+      "The",
+      "Eagles"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_artist"
+  },
+  {
+    "words": [
+      "включи",
+      "альбом",
+      "The",
+      "Dark",
+      "Side",
+      "of",
+      "the",
+      "Moon"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "запусти",
+      "пластинку",
+      "Thriller"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "сыграй",
+      "альбом",
+      "Back",
+      "in",
+      "Black"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включить",
+      "музыку",
+      "The",
+      "Wall"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "поставь",
+      "альбом",
+      "Abbey",
+      "Road"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "Горгород"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включи",
+      "пластинку",
+      "Hotel",
+      "California"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "запусти",
+      "альбом",
+      "Nevermind"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "сыграй",
+      "диск",
+      "Группа",
+      "крови"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "Камнем",
+      "по",
+      "голове"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включи",
+      "музыкальный",
+      "альбом",
+      "Purple",
+      "Rain"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "поставь",
+      "пластинку",
+      "Sgt.",
+      "Pepper's",
+      "Lonely",
+      "Hearts",
+      "Club",
+      "Band"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "запусти",
+      "альбом",
+      "Громче",
+      "воды",
+      "выше",
+      "травы"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включить",
+      "диск",
+      "Led",
+      "Zeppelin",
+      "IV"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "сыграй",
+      "альбом",
+      "21"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "пластинку",
+      "The",
+      "Fame"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "поставь",
+      "альбом",
+      "Конечно",
+      "он"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включи",
+      "музыку",
+      "Kind",
+      "of",
+      "Blue"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "запусти",
+      "диск",
+      "The",
+      "Eminem",
+      "Show"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "сыграй",
+      "пластинку",
+      "Rainbow"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "альбом",
+      "1989"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включи",
+      "диск",
+      "What's",
+      "Going",
+      "On"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "поставь",
+      "музыкальный",
+      "альбом",
+      "Californication"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "запусти",
+      "пластинку",
+      "The",
+      "Bends"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "сыграй",
+      "альбом",
+      "Master",
+      "of",
+      "Puppets"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "диск",
+      "A",
+      "Rush",
+      "of",
+      "Blood",
+      "to",
+      "the",
+      "Head"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включи",
+      "альбом",
+      "Вирус"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "поставь",
+      "пластинку",
+      "Exile",
+      "on",
+      "Main",
+      "St."
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "запусти",
+      "альбом",
+      "Teenage",
+      "Dream"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включить",
+      "музыку",
+      "Dookie"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "play_album"
+  },
+  {
+    "words": [
+      "включи",
+      "плейлист",
+      "На",
+      "перекрестках",
+      "весны"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "запусти",
+      "подборку",
+      "Rock",
+      "Classics"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "плейлист",
+      "поп",
+      "музыка"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включить",
+      "музыку",
+      "Workout",
+      "Mix"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "поставь",
+      "плейлист",
+      "утренняя",
+      "рутина"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "веселый",
+      "плейлист"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включи",
+      "подборку",
+      "Pop",
+      "Party"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "запусти",
+      "плейлист",
+      "Study",
+      "Focus"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "микс",
+      "летние",
+      "хиты"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "Deep",
+      "House",
+      "Selection"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включи",
+      "музыкальный",
+      "плейлист",
+      "Driving",
+      "Songs"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "поставь",
+      "подборку",
+      "для",
+      "дороги"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "запусти",
+      "плейлист",
+      "Throwback",
+      "Thursday"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включить",
+      "микс",
+      "Electronic",
+      "Beats"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "плейлист",
+      "Soft",
+      "Pop"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "подборку",
+      "лучшее",
+      "из",
+      "рока"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "поставь",
+      "плейлист",
+      "Gym",
+      "Motivation"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включи",
+      "микс",
+      "Old",
+      "School",
+      "Hip",
+      "Hop"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "запусти",
+      "подборку",
+      "музыка",
+      "пианино"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "плейлист",
+      "Happy",
+      "Tunes"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "микс",
+      "Jazz",
+      "Essentials"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включи",
+      "плейлист",
+      "Running",
+      "Tracks"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "поставь",
+      "музыкальный",
+      "микс",
+      "вечернее",
+      "расслабление"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "запусти",
+      "плейлист",
+      "Indie",
+      "Folk"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "сыграй",
+      "подборку",
+      "Top",
+      "Pop",
+      "Anthems"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "плейлист",
+      "Latin",
+      "Fiesta"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включи",
+      "микс",
+      "Soul",
+      "Collection"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "поставь",
+      "подборку",
+      "альтернативного",
+      "рока"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "запусти",
+      "плейлист",
+      "Dreamy",
+      "Electronica"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включить",
+      "музыку",
+      "Feel",
+      "Good",
+      "Vibes"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I",
+      "I"
+    ],
+    "intent": "play_playlist"
+  },
+  {
+    "words": [
+      "включи",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "запусти",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "сыграй",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включить",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "поставь",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включи",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "запусти",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "сыграй",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включи",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "запусти",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "сыграй",
+      "мою",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "поставь",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включить",
+      "мою",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "запусти",
+      "рекомендации",
+      "моей",
+      "волны"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включи",
+      "подборку",
+      "моей",
+      "волны"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "сыграй",
+      "мои",
+      "рекомендации"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "поставь",
+      "мои",
+      "рекомендации"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включи",
+      "мою",
+      "станцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "запусти",
+      "мою",
+      "станцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "мою",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включи",
+      "рекомендации",
+      "для",
+      "меня"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "запусти",
+      "персональные",
+      "рекомендации"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "сыграй",
+      "мою",
+      "персональную",
+      "подборку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "поставь",
+      "мою",
+      "станцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включить",
+      "персональную",
+      "подборку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "персональную",
+      "волну"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_wave"
+  },
+  {
+    "words": [
+      "включи",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "запусти",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "сыграй",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включить",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "поставь",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включи",
+      "моё",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "запусти",
+      "моё",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "сыграй",
+      "моё",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включи",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "запусти",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "сыграй",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "поставь",
+      "моё",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включить",
+      "моё",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "моё",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включи",
+      "мои",
+      "любимые",
+      "треки"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "запусти",
+      "мои",
+      "любимые",
+      "песни"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "сыграй",
+      "мои",
+      "любимые",
+      "композиции"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "поставь",
+      "мои",
+      "любимые",
+      "треки"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включить",
+      "мои",
+      "любимые",
+      "песни"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "мои",
+      "любимые",
+      "треки"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "мои",
+      "любимые",
+      "песни"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включи",
+      "подборку",
+      "избранного"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "запусти",
+      "подборку",
+      "избранного"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "сыграй",
+      "мой",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "поставь",
+      "мой",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включить",
+      "мой",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_favourite"
+  },
+  {
+    "words": [
+      "включи",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "запусти",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "сыграй",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включить",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "поставь",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включи",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "запусти",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "сыграй",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включи",
+      "радио",
+      "онлайн"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "запусти",
+      "радио",
+      "онлайн"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "сыграй",
+      "интернет",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "поставь",
+      "интернет",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включить",
+      "интернет",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "хочу",
+      "включить",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "хочу",
+      "услышать",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включи",
+      "случайную",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "запусти",
+      "случайную",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "сыграй",
+      "любую",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "поставь",
+      "какую-нибудь",
+      "радиостанцию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включи",
+      "музыку",
+      "на",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "запусти",
+      "музыку",
+      "на",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "поставь",
+      "радио",
+      "в",
+      "фоне"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включить",
+      "радио",
+      "в",
+      "фоне"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "хочу",
+      "послушать",
+      "интернет",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "дай",
+      "послушать",
+      "случайное",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "включи",
+      "любое",
+      "радио"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "запусти",
+      "радио",
+      "в",
+      "прямом",
+      "эфире"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "play_random_radio"
+  },
+  {
+    "words": [
+      "следующий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующая",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующая",
+      "композиция"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "дальше"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "вперед"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "переключи",
+      "на",
+      "следующий"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "переключи",
+      "на",
+      "следующую",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "переключи",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "включи",
+      "следующий"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "запусти",
+      "следующий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "поставь",
+      "следующий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "сыграй",
+      "следующий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "дай",
+      "следующий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующий",
+      "плейлиста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующий",
+      "альбома"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующий",
+      "в",
+      "плейлисте"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующая",
+      "в",
+      "очереди"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующая",
+      "песня",
+      "в",
+      "очереди"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "пропустить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "пропустить",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "пропусти",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "пропусти",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "переключи",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "переключить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "следующий",
+      "трек",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "включи",
+      "следующую",
+      "композицию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "запусти",
+      "следующую",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "поставь",
+      "следующую",
+      "композицию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "хочу",
+      "следующий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "давай",
+      "следующий"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_next"
+  },
+  {
+    "words": [
+      "предыдущий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущая",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущая",
+      "композиция"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "назад"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "вернись"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "переключи",
+      "на",
+      "предыдущий"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "переключи",
+      "на",
+      "предыдущую",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "переключи",
+      "трек",
+      "назад"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "включи",
+      "предыдущий"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "запусти",
+      "предыдущий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "поставь",
+      "предыдущий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "сыграй",
+      "предыдущий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "дай",
+      "предыдущий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущий",
+      "плейлиста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущий",
+      "альбома"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущий",
+      "в",
+      "плейлисте"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущая",
+      "в",
+      "очереди"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущая",
+      "песня",
+      "в",
+      "очереди"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "вернуться",
+      "к",
+      "предыдущему"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "вернуться",
+      "к",
+      "предыдущей",
+      "песне"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "вернись",
+      "к",
+      "предыдущему",
+      "треку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "переключи",
+      "назад"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "переключить",
+      "назад"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "предыдущий",
+      "трек",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "включи",
+      "предыдущую",
+      "композицию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "запусти",
+      "предыдущую",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "поставь",
+      "предыдущую",
+      "композицию"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "хочу",
+      "предыдущий",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "давай",
+      "предыдущий"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "назад",
+      "на",
+      "трек",
+      "назад"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_prev"
+  },
+  {
+    "words": [
+      "пауза"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "стоп"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "останови"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "приостанови"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "поставь",
+      "на",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "поставить",
+      "на",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "включи",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "сделай",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "сделать",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "остановить",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "остановить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "останови",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "останови",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "приостановить",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "приостановить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "приостанови",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "приостанови",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "пауза",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "стоп",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "поставь",
+      "на",
+      "паузу",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "останови",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "давай",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "хочу",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "нужна",
+      "пауза"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "поставь",
+      "музыку",
+      "на",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "поставить",
+      "музыку",
+      "на",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "остановить",
+      "воспроизведение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "останови",
+      "воспроизведение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "приостановить",
+      "воспроизведение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "временно",
+      "останови"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_pause"
+  },
+  {
+    "words": [
+      "продолжить"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобновить"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжай"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобнови"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "играй"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжить",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжай",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжай",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобновить",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобновить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобнови",
+      "музыку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобнови",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжить",
+      "воспроизведение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжай",
+      "воспроизведение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобновить",
+      "воспроизведение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "снять",
+      "с",
+      "паузы"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "сними",
+      "с",
+      "паузы"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "включи",
+      "снова"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "запусти",
+      "снова"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжить",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжай",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "давай",
+      "продолжим"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "хочу",
+      "продолжить"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжить",
+      "играть"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжай",
+      "играть"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "возобнови",
+      "проигрывание"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "продолжить",
+      "проигрывание"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "сними",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "снять",
+      "паузу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "track_resume"
+  },
+  {
+    "words": [
+      "громче"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "увеличь",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "увеличить",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "сделай",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "сделать",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "прибавь",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "прибавить",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "подними",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "поднять",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "громче",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "увеличь",
+      "громкость",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "прибавь",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "прибавить",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "добавь",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "добавить",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "сделай",
+      "звук",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "сделать",
+      "звук",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "увеличь",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "увеличить",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "прибавь",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "поставь",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "поставить",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "хочу",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "сделай",
+      "погромче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "сделать",
+      "погромче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "прибавь",
+      "звук",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "подними",
+      "громкость",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "громче",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "увеличь",
+      "звук",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "давай",
+      "громче"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_up"
+  },
+  {
+    "words": [
+      "тише"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "уменьшь",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "уменьшить",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сделай",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сделать",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "убавь",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "убавить",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "опусти",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "опустить",
+      "громкость"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "тише",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "уменьшь",
+      "громкость",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "убавь",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "убавить",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сбавь",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сбавить",
+      "громкости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сделай",
+      "звук",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сделать",
+      "звук",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "уменьшь",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "уменьшить",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "убавь",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "поставь",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "поставить",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "хочу",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сделай",
+      "потише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "сделать",
+      "потише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "убавь",
+      "звук",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "опусти",
+      "громкость",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "тише",
+      "звук"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "уменьшь",
+      "звук",
+      "пожалуйста"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "давай",
+      "тише"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "volume_down"
+  },
+  {
+    "words": [
+      "установи",
+      "громкость",
+      "на",
+      "50"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "громкость",
+      "75"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "громкость",
+      "30"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "установи",
+      "звук",
+      "на",
+      "80"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "звук",
+      "25"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "громкость",
+      "100"
+    ],
+    "slots": [
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "громкость",
+      "на",
+      "60"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "звук",
+      "на",
+      "45"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "установи",
+      "громкость",
+      "15"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "громкость",
+      "на",
+      "90"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "громкость",
+      "на",
+      "40"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "установи",
+      "уровень",
+      "громкости",
+      "70"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "уровень",
+      "звука",
+      "20"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "тише",
+      "на",
+      "30"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "громче",
+      "на",
+      "20"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "убавь",
+      "громкость",
+      "до",
+      "50"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "прибавь",
+      "громкость",
+      "до",
+      "80"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "уменьши",
+      "громкость",
+      "до",
+      "25"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "увеличь",
+      "громкость",
+      "до",
+      "95"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "громкость",
+      "на",
+      "10",
+      "процентов"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "установи",
+      "звук",
+      "55",
+      "процентов"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "громкость",
+      "65",
+      "процентов"
+    ],
+    "slots": [
+      "O",
+      "B",
+      "I"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "звук",
+      "85"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "установи",
+      "уровень",
+      "звука",
+      "на",
+      "35"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "уровень",
+      "громкости",
+      "на",
+      "75"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "громкость",
+      "равной",
+      "40"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "установи",
+      "громкость",
+      "на",
+      "0"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "поставь",
+      "звук",
+      "на",
+      "100"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "потише",
+      "до",
+      "30"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "сделай",
+      "погромче",
+      "до",
+      "70"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "B"
+    ],
+    "intent": "set_volume"
+  },
+  {
+    "words": [
+      "лайк"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "like"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставь",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставить",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавь",
+      "в",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавить",
+      "в",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "сохрани",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "сохранить",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "сохрани",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "сохранить",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставь",
+      "сердечко"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставить",
+      "сердечко"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавь",
+      "в",
+      "любимое"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавить",
+      "в",
+      "любимое"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавь",
+      "в",
+      "любимые"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавить",
+      "в",
+      "любимые"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавь",
+      "в",
+      "избранное",
+      "этот",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "лайк",
+      "этому",
+      "треку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставь",
+      "лайк",
+      "этому",
+      "треку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставь",
+      "лайк",
+      "этой",
+      "песне"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "лайк",
+      "песни"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "лайк",
+      "трека"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "нравится",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "нравится",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "мне",
+      "нравится",
+      "этот",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "это",
+      "классно",
+      "сохрани"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставь",
+      "плюс"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "поставить",
+      "плюс"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "добавь",
+      "в",
+      "плейлист",
+      "избранное"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "сохрани",
+      "эту",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "like"
+  },
+  {
+    "words": [
+      "дизлайк"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "dislike"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "поставь",
+      "дизлайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "поставить",
+      "дизлайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убери",
+      "из",
+      "избранного"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убрать",
+      "из",
+      "избранного"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "удалить",
+      "из",
+      "избранного"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "удали",
+      "из",
+      "избранного"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "не",
+      "нравится"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "мне",
+      "не",
+      "нравится"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "мне",
+      "не",
+      "нравится",
+      "этот",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "мне",
+      "не",
+      "нравится",
+      "эта",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убери",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убрать",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "сними",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "снять",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "поставь",
+      "минус"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "поставить",
+      "минус"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убери",
+      "сердечко"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убрать",
+      "сердечко"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "дизлайк",
+      "этому",
+      "треку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "дизлайк",
+      "этой",
+      "песне"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "поставь",
+      "дизлайк",
+      "этому",
+      "треку"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "поставь",
+      "дизлайк",
+      "этой",
+      "песне"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "это",
+      "плохо",
+      "убери"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "это",
+      "ужасно",
+      "удали"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "не",
+      "лайк"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "не",
+      "like"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убери",
+      "из",
+      "любимого"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "убрать",
+      "из",
+      "любимого"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "dislike"
+  },
+  {
+    "words": [
+      "что",
+      "играет"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "сейчас",
+      "играет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какая",
+      "песня",
+      "играет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какой",
+      "трек",
+      "играет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "за",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "за",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какая",
+      "сейчас",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какой",
+      "сейчас",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "сейчас",
+      "поет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "кто",
+      "поет"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "кто",
+      "исполняет"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какой",
+      "исполнитель"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "кто",
+      "сейчас",
+      "поет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какая",
+      "сейчас",
+      "композиция"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "за",
+      "композиция"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "название",
+      "песни"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "название",
+      "трека"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "скажи",
+      "название",
+      "песни"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "скажи",
+      "название",
+      "трека"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "как",
+      "называется",
+      "эта",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "как",
+      "называется",
+      "этот",
+      "трек"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "сейчас",
+      "звучит"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "звучит"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какая",
+      "музыка",
+      "сейчас"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какая",
+      "музыка",
+      "играет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "играет",
+      "сейчас"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какую",
+      "песню",
+      "слушаю"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "какую",
+      "песню",
+      "мы",
+      "слушаем"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "что",
+      "мы",
+      "слушаем"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "это",
+      "какая",
+      "песня"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "ask_current_track"
+  },
+  {
+    "words": [
+      "выход"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выйти"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закрой"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закрыть"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "стоп"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "останови"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "заверши"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "завершить"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выйди"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закрой",
+      "приложение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закрыть",
+      "приложение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выйти",
+      "из",
+      "приложения"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выход",
+      "из",
+      "приложения"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закрой",
+      "программу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закрыть",
+      "программу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выйти",
+      "из",
+      "программы"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "заверши",
+      "работу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "завершить",
+      "работу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выключи"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выключить"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выключи",
+      "ассистента"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "выключить",
+      "ассистента"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "отключи"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "отключить"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "закройся"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "пока"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "до",
+      "свидания"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "все",
+      "хорошо",
+      "закрой"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "спасибо",
+      "выйди"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "на",
+      "выход"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "exit"
+  },
+  {
+    "words": [
+      "привет"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "здравствуй"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "как",
+      "дела"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "как",
+      "ты"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "что",
+      "нового"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "погода",
+      "сегодня"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какая",
+      "погода",
+      "завтра"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "сколько",
+      "времени"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "который",
+      "час"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "что",
+      "ты",
+      "умеешь"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "кто",
+      "ты"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "как",
+      "тебя",
+      "зовут"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "расскажи",
+      "шутку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "пошути"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "помоги"
+    ],
+    "slots": [
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "что",
+      "делаешь"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "где",
+      "ты"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "открой",
+      "браузер"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "открой",
+      "калькулятор"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "напиши",
+      "сообщение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "позвони",
+      "маме"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "отправь",
+      "письмо"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "включи",
+      "свет"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "выключи",
+      "свет"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "закажи",
+      "пиццу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "найди",
+      "ресторан"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "расскажи",
+      "новости"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какой",
+      "сегодня",
+      "день"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "когда",
+      "будет",
+      "завтра"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "что",
+      "это",
+      "было"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "доброе",
+      "утро"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "добрый",
+      "день"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "добрый",
+      "вечер"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "спокойной",
+      "ночи"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "как",
+      "жизнь"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "как",
+      "настроение"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "что",
+      "случилось"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "всё",
+      "нормально"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "хорошо",
+      "спасибо"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "отлично",
+      "а",
+      "у",
+      "тебя"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какой",
+      "сегодня",
+      "праздник"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какое",
+      "сегодня",
+      "число"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какой",
+      "день",
+      "недели"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "будет",
+      "дождь"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "на",
+      "улице",
+      "холодно"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какая",
+      "температура"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "ветер",
+      "сильный"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "солнечно",
+      "сегодня"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "расскажи",
+      "анекдот"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "расскажи",
+      "историю"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "спой",
+      "песню"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "научи",
+      "чему-нибудь"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "дай",
+      "совет"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "посоветуй",
+      "фильм"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "посоветуй",
+      "книгу"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "куда",
+      "сходить"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "что",
+      "посмотреть"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какой",
+      "лучший",
+      "ресторан"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "где",
+      "купить",
+      "билеты"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "сколько",
+      "стоит",
+      "билет"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "забронируй",
+      "столик"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "закажи",
+      "такси"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "вызови",
+      "такси"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "поехали",
+      "домой"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "включи",
+      "навигатор"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "построй",
+      "маршрут"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "сколько",
+      "ехать",
+      "до",
+      "центра"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "какой",
+      "трафик",
+      "сейчас"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "покажи",
+      "фото"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "открой",
+      "галерею"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "сделай",
+      "скриншот"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "запиши",
+      "заметку"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "напомни",
+      "о",
+      "встрече"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "поставь",
+      "будильник"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "разбуди",
+      "меня",
+      "завтра"
+    ],
+    "slots": [
+      "O",
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "я",
+      "устал"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "мне",
+      "скучно"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "я",
+      "голоден"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "хочу",
+      "пить"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  },
+  {
+    "words": [
+      "можно",
+      "спросить"
+    ],
+    "slots": [
+      "O",
+      "O"
+    ],
+    "intent": "other"
+  }
+]
