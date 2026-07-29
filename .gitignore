@@ -19,3 +19,4 @@
 /Jarvis/logs/
 /Jarvis/.env.client
 /Jarvis/back/.env.back
+/Jarvis/checkpoints/
