@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change afterPath="$PROJECT_DIR$/Jarvis/asdas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jarvis/create.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/NN_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NN_learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/TODO_list.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/Brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Brain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/MicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/MicController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/test/audio.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/test/bert_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/test/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/test/yandex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/create.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/create.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,11 +104,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\documentation" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\checkpoints" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\back" />
       <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis\test" />
-      <recent name="C:\Alexey\Projects\Udemy\NN_learning\Jarvis" />
     </key>
   </component>
   <component name="SharedIndexes">

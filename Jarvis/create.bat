@@ -5,7 +5,7 @@ flet pack App.py ^
   --add-data "src:src" ^
   --add-data ".env.client:." ^
   --add-data "data:data" ^
-  --add-data "models\extractor.pth:models" ^
+  --add-data "models:models" ^
   --hidden-import keyboard ^
   --pyinstaller-build-args="--collect-all=torch" ^
   --pyinstaller-build-args="--collect-all=transformers" ^
