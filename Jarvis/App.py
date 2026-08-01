@@ -11,7 +11,6 @@ import sys
 import threading
 import hashlib
 import yandex_music
-from yandex_music.exceptions import BadRequestError
 from src.Brain import Brain
 
 
@@ -46,6 +45,7 @@ class JarvisApp:
             self.page: ft.Page | None = None
 
             self.brain: Brain | None = None
+            self.loop: None | asyncio.AbstractEventLoop = None
             self.db_url = os.getenv('DB_URL')
             self.is_playing = False
             self.stop_worker = threading.Event()
@@ -112,6 +112,10 @@ class JarvisApp:
                                               can_reveal_password=True,
                                               width=200,
                                               text_size=14)
+            self.auth_error = ft.Text(value='',
+                                      width=200,
+                                      size=7,
+                                      text_align=ft.TextAlign.CENTER)
             self.auth_btn = ft.Button('Enter',
                                       on_click=self.handle_login,
                                       width=200)
@@ -181,6 +185,19 @@ class JarvisApp:
             logging.error(e)
             raise Exception('Check user error')
 
+    def check_login_in_db(self, username):
+        try:
+            response = requests.post(
+                f'{self.db_url}/auth/login',
+                json={'username': username}
+            )
+            if response.status_code == 200:
+                return response.json().get('exists', False)
+            return False
+        except Exception as e:
+            logging.error(e)
+            raise Exception('Check login error')
+
     def save_user_to_db(self, username, password):
         try:
             password = self.hash_password(password)
@@ -213,7 +230,7 @@ class JarvisApp:
             self.ym_link_btn.content = code.verification_url
             self.ym_link_btn.url = code.verification_url
             self.ym_code_text.value = f'Code: {code.user_code}'
-            self.page.update()
+            self.loop.call_soon_threadsafe(self.page.update) # type: ignore
         except Exception as e:
             logging.error(e)
             raise Exception('Authorization error (Yandex Music API)')
@@ -228,10 +245,11 @@ class JarvisApp:
         except Exception as e:
             logging.error(f'Yandex auth error: {e}')
             self.ym_link_btn.content = 'Authorization error'
-            self.ym_link_btn.url = ''
-            self.ym_code_text.value = ''
+            self.ym_link_btn.disabled = True
+            self.ym_code_text.value = 'Unknow error'
+            self.auth_dialog.open = True
+            self.ym_token = 'Error'
             self.page.update()
-            await self.page.window.destroy()
             raise Exception('Authorization error')
 
     def build_ui(self, page: ft.Page):
@@ -272,6 +290,7 @@ class JarvisApp:
                     self.auth_password,
                     ft.Container(height=10),
                     self.auth_btn,
+                    self.auth_error
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
                 horizontal_alignment=ft.CrossAxisAlignment.CENTER,
@@ -284,7 +303,7 @@ class JarvisApp:
 
     async def handle_login(self, _):
         try:
-            self.auth_btn.disabled = True
+            self.loop = asyncio.get_event_loop()
             self.page.update()
 
             username = self.auth_login.value
@@ -292,9 +311,20 @@ class JarvisApp:
 
             is_authenticated = await asyncio.to_thread(self.check_user_in_db, username, password)
             if is_authenticated:
+                self.auth_btn.disabled = True
                 self.ym_token = await asyncio.to_thread(self.get_token_from_db, username, password)
                 self.show_main_screen()
             else:
+                if await asyncio.to_thread(self.check_login_in_db, username):
+                    self.auth_error.value = 'Wrong username or password'
+                    self.page.update()
+                    return
+                if len(password) < int(os.getenv('PASS_MIN_LEN')):
+                    self.auth_error.value = 'Password too short'
+                    self.page.update()
+                    return
+                self.auth_error.value = ''
+                self.auth_btn.disabled = True
                 self.ym_link_btn.content = 'Loading...'
                 self.ym_link_btn.url = ''
                 self.ym_code_text.value = ''
@@ -360,14 +390,14 @@ class JarvisApp:
             self.central_button.disabled = False
             self.reload_button.disabled = False
             self.page.update()
-        except BadRequestError:
+        except Exception as e:
+            logging.error(e)
             self.status_led.color = ft.Colors.RED_ACCENT
             self.status_text.value = 'Error'
             self.central_button.disabled = True
-            self.last_action_label.value = 'An error occurred. Try to reload'
-        except Exception as e:
-            logging.error(e)
-            await self.page.window.destroy()
+            self.reload_button.disabled = False
+            self.last_action_label.value = 'Try to reload'
+            self.page.update()
             raise Exception('Load brain error')
 
     async def listen(self):

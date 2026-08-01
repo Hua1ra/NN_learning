@@ -8,17 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/NN_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NN_learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/.env.client" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/.env.client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/AudioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/AudioController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/BERT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/BERT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/Brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Brain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/src/MicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/MicController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/back/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/back/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/back/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/back/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/TODO.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +116,7 @@
     "Python.main.executor": "Run",
     "Python.main1.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.truncate.executor": "Run",
     "Python.validate.executor": "Run",
     "Python.visualize.executor": "Run",
     "Python.yandex.executor": "Run",

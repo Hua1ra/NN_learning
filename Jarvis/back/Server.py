@@ -20,35 +20,35 @@ class Database:
             port=os.getenv("POSTGRES_PORT")
         )
         self.conn.autocommit = True
-        self.curr = self.conn.cursor()
-        self.curr.execute('''CREATE TABLE IF NOT EXISTS users
-                             (
-                                login VARCHAR(64) PRIMARY KEY,
-                                pass VARCHAR(64) NOT NULL,
-                                tok VARCHAR(2048) NOT NULL
-                             )''')
-        print('Connected to Database successfully')
-
+        self.cur = self.conn.cursor()
+        self.cur.execute('''CREATE TABLE IF NOT EXISTS users
+                            (
+                               login VARCHAR(64) PRIMARY KEY,
+                               pass VARCHAR(64) NOT NULL,
+                               tok VARCHAR(2048) NOT NULL
+                            )''')
         self.queries = {
-            'check': '''SELECT 1 FROM users WHERE login = %s AND pass = %s;''',
+            'password': '''SELECT 1 FROM users WHERE login = %s AND pass = %s;''',
             'save': '''INSERT INTO users (login, pass, tok) VALUES (%s, %s, %s) 
                        ON CONFLICT (login) DO UPDATE SET pass = EXCLUDED.pass, tok = EXCLUDED.tok;''', # Добавил ON CONFLICT на случай перезаписи
             'get': '''SELECT tok FROM users WHERE login = %s AND pass = %s;''',
+            'login': '''SELECT 1 FROM users WHERE login = %s;''',
         }
 
     def check_user(self, username, password):
-        print('check')
-        self.curr.execute(self.queries['check'], (username, password))
-        return self.curr.fetchone() is not None
+        self.cur.execute(self.queries['password'], (username, password))
+        return self.cur.fetchone() is not None
+
+    def check_login(self, username):
+        self.cur.execute(self.queries['login'], (username, ))
+        return self.cur.fetchone() is not None
 
     def save_user(self, username, password, token):
-        print('save')
-        self.curr.execute(self.queries['save'], (username, password, token))
+        self.cur.execute(self.queries['save'], (username, password, token))
 
     def get_token(self, username, password):
-        print('get')
-        self.curr.execute(self.queries['get'], (username, password))
-        result = self.curr.fetchone()
+        self.cur.execute(self.queries['get'], (username, password))
+        result = self.cur.fetchone()
         return result[0] if result else None
 
 db = Database()
@@ -58,6 +58,9 @@ db = Database()
 class UserAuth(BaseModel):
     username: str
     password: str
+
+class UserLogin(BaseModel):
+    username: str
 
 class UserSave(BaseModel):
     username: str
@@ -69,6 +72,11 @@ class UserSave(BaseModel):
 @app.post("/auth/check")
 def check_user_endpoint(user: UserAuth):
     exists = db.check_user(user.username, user.password)
+    return {"exists": exists}
+
+@app.post("/auth/login")
+def check_login_endpoint(user: UserLogin):
+    exists = db.check_login(user.username)
     return {"exists": exists}
 
 @app.post("/auth/save")
