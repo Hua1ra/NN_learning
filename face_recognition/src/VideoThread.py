@@ -65,13 +65,11 @@ class VideoThread(QThread):
                 with torch.no_grad():
                     detector_image = Image.fromarray(rgb_image)
                     cropped_image, left_eye, right_eye, rectangle = self.detector(detector_image)
-                    # TODO: normalize_transform?
                     # Get the closest vector if at least one face was found
                     if cropped_image is not None:
                         cropped_image = self.normalizer.transform(cropped_image)
                         cropped_image = cropped_image.to(self.device)
                         embedding = self.extractor(cropped_image)[0]
-                        # TODO: reaccess bd every n frames
                         closest = self.dbadmin.get_closest(embedding.tolist(),
                                                            threshold=0.5)
                         # Get the name

@@ -18,6 +18,5 @@
 /Jarvis/logs/
 /Jarvis/dist/
 /Jarvis/build/
-/Jarvis/.env.client
 /Jarvis/back/.env.back
 /Jarvis/checkpoints/

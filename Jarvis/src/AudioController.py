@@ -58,7 +58,7 @@ class AudioController:
 
     def exit(self):
         try:
-            logging.info('Exit')
+            logging.info('Aborting')
             if self.player.is_playing():
                 self.player.stop()
             if self.player:

@@ -8,11 +8,11 @@ import sys
 import random
 import time
 import yandex_music
+from yandex_music.exceptions import BadRequestError
 import vlc
 from src.AudioController import AudioController #type: ignore
 from src.MicController import MicController #type: ignore
 from src.YMController import YMController #type: ignore
-
 
 
 class Brain:
@@ -21,7 +21,14 @@ class Brain:
         try:
             self.token = token
             self.device = device
-            self.client = yandex_music.Client(token)
+            self.client = yandex_music.Client(token).init()
+
+            try:
+                self.client.account_status()
+            except Exception as e:
+                logging.error(e)
+                raise BadRequestError('Internet connection error')
+
             self.ymcontroller = YMController(self.client, self.device)
             self.device = device
 
@@ -36,9 +43,11 @@ class Brain:
             self.is_track_ended = False
             self.was_playing = False
             self.event_manager.event_attach(getattr(vlc.EventType, 'MediaPlayerEndReached'), self.track_ended)
+        except BadRequestError:
+            raise BadRequestError('Internet connection error')
         except Exception as e:
             logging.error(e)
-            sys.exit(1)
+            raise Exception('Initialization error')
 
     @staticmethod
     def get_base_path():
@@ -174,7 +183,7 @@ class Brain:
         logging.info('Undefined command')
         return 'undefined command'
 
-    def exit(self):
+    def abort(self):
         self.audiocontroller.exit()
 
     def track_ended(self, _):
@@ -196,6 +205,7 @@ class Brain:
                 intent, tokens = result
                 logging.info(intent + ' ' + ' '.join(tokens))
                 if intent == 'exit':
+                    logging.info('Exit')
                     return intent, 'exit'
                 elif intent == 'ask_current_track':
                     if self.was_playing:

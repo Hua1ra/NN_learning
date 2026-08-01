@@ -17,6 +17,8 @@
       <excludeFolder url="file://$MODULE_DIR$/Jarvis/checkpoints" />
       <excludeFolder url="file://$MODULE_DIR$/Jarvis/data" />
       <excludeFolder url="file://$MODULE_DIR$/Jarvis/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/Jarvis/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Jarvis/dist" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (NN_learning)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

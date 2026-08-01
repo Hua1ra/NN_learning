@@ -8,7 +8,29 @@ Jarvis is a voice assistant for music control through the Yandex Music API. A li
 
 ### Description
 
-A lightweight application running in the background. It detects the wake word using the Faster Whisper model, recognizes text based on XLM-RoBERTa, and executes the corresponding request to the Yandex Music API.
+An application running in the background. It detects the wake word using openwakeword library, the Faster Whisper model for speech-to-text, recognizes intent and tokens based on rubert-tiny2 and executes the corresponding request to the Yandex Music API.
+
+
+
+### Directories
+
+* back: Back-end for database and a corresponding API
+* build: Build directory for .exe
+* checkpoints: Saved checkpoints while fine-tuning
+* data: JSON files with data for fine-tuning, existing intents, tokens and radio
+* dist: Distribution directory for .exe
+* documentation: Contains license, README, requirements and fine-tuning metrics dynamic
+* logs: Logs for debugging
+* models: Used models in the App
+* src: Used modules in the App
+
+### Files
+
+* .env.client: Necessary parameters
+* App.py: Main application
+* create.bat: Script to create .exe file
+* FineTuning.py: Fine tuning script
+* ModelFromCheckpoint.py: Save model script
 
 
 
@@ -36,6 +58,19 @@ A lightweight application running in the background. It detects the wake word us
 
 
 
+### How to use
+
+Jarvis detects different requests on the Russian language, such as:
+
+* "Включи песню Адская колыбельная"
+* "Включи избранное"
+* "Поставь лайк"
+* "Звук на 75"
+
+and much more. The tokens (or basically titles / names) can be both on Russian and English languages. In case the model is not sure about the intent, it returns "other".
+
+
+
 ### How to start
 
 For now the project is a very early demo version.
@@ -43,16 +78,9 @@ For now the project is a very early demo version.
 To start:
 
 1. Clone this repo
-2. Install necessary libraries
-3. Start the "App.py" file
-
-
-
-### Future plans
-
-1. Build a fully functioning app that can be downloaded easily
-2. Create a database for logins and tokens
-3. Design a web version of the project
+2. Install necessary libraries from requirements.txt (both root and back directories)
+3. use docker-compose up -d inside back folder
+4. Start the "App.py" file (or .exe file from dist directory)
 
 
 
@@ -63,4 +91,10 @@ Author: Alexey Korolyuk
 Email: korolyukalexei@gmail.com
 
 Telegram: @hua1ra
+
+
+
+### P.S
+
+For reporting any bugs or suggestions contact me via email or telegram.
 

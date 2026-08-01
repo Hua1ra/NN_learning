@@ -1,0 +1,9 @@
+0) Get the .exe version with db_url thrown through Wi-Fi router
+1) Push to git
+
+3)! Bad token logging (Check)
+4)! No Wi-Fi logging (Check)
+2)! Visualization loading bug (Maybe updated) (Needs Wi-fi)
+5)! Check the confidence of the BERT (set a threshold) (Maybe updated) (Needs Wi-Fi)
+6)! Redo requirements for back (Needs Wi-Fi)
+7)! Reload button? (Probably okay)

@@ -3,16 +3,32 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NN_learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NN_learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/create.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/create.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/AudioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/AudioController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/BERT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/BERT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/Brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Brain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/MicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/MicController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/src/VideoThread.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Alexey/Projects/Udemy/NN_learning" value="3HJMKxGwUyzrmewv072PPjajC9G" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +60,21 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="3BFdZ21Xc7972vRGURpK34IkOwP" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,6 +95,7 @@
     "Python.FeedForward.executor": "Run",
     "Python.FineTuning.executor": "Run",
     "Python.LossFn.executor": "Run",
+    "Python.MicController.executor": "Run",
     "Python.ModelFromCheckpoint.executor": "Run",
     "Python.MultiHeadAttention.executor": "Run",
     "Python.Processor.executor": "Run",
@@ -77,6 +109,7 @@
     "Python.VideoThread.executor": "Run",
     "Python.Visualize.executor": "Run",
     "Python.YMController.executor": "Run",
+    "Python.a.executor": "Run",
     "Python.asdas.executor": "Run",
     "Python.audio.executor": "Run",
     "Python.bert_test.executor": "Run",
@@ -95,7 +128,9 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Alexey/Projects/Udemy/NN_learning",
     "settings.editor.selected.configurable": "preferences.pluginManager",

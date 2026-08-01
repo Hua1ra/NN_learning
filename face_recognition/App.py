@@ -158,7 +158,6 @@ class FaceApp(QMainWindow):
             print('No database loaded.')
             self.print_info('No database loaded.')
             return
-        # TODO: Check if person exists
         print('Adding faces...')
         self.print_info('Adding faces...')
         files, _ = QFileDialog.getOpenFileNames(self,
@@ -186,7 +185,6 @@ class FaceApp(QMainWindow):
                         # Try to detect faces
                         cropped_image, left_eye, right_eye, rectangle = self.detector(img)
                         if cropped_image is not None:
-                            # TODO: normalize_transform?
                             cropped_image = self.normalizer.transform(cropped_image)
                             cropped_image = cropped_image.to(self.device)
                             embedding = self.extractor(cropped_image)[0]

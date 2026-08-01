@@ -31,13 +31,14 @@ class MicController:
             self.id_to_token = {v: k for k, v in self.token_to_id.items()}
             self.oww_model = Model(wakeword_models=[os.getenv('OWW_MODEL')], inference_framework=os.getenv('OWW_FRAMEWORK'))
             self.rec_model = WhisperModel(str((self.basic_path / os.getenv('WHISPER_MODEL')).resolve()), device='cpu', compute_type='int8')
-            self.tokenizer = transformers.AutoTokenizer.from_pretrained((self.basic_path / os.getenv('BERT_MODEL')).resolve())
+            self.tokenizer = transformers.AutoTokenizer.from_pretrained(str((self.basic_path / os.getenv('BERT_MODEL')).resolve()))
             self.classifier_model = IntentTokenClassifier()
             self.classifier_model.load_state_dict(torch.load((self.basic_path / os.getenv('MODEL')).resolve(), weights_only=True))
 
             self.oww_recognized = False
             self.command_chunks = []
             self.silent_chunks = 0
+            self.command_chunks_number = 0
         except Exception as e:
             logging.error(e)
             sys.exit(1)
@@ -76,13 +77,14 @@ class MicController:
                     self.oww_recognized = True
                     return True # If did recognize oww
             if self.oww_recognized:
+                self.command_chunks_number += 1
                 self.command_chunks.append(audio_chunk)
                 rms = np.sqrt(np.mean(audio_chunk.astype(np.float32) ** 2))
                 if rms < int(os.getenv('SILENCE_THRESHOLD')):
                     self.silent_chunks += 1
                 else:
                     self.silent_chunks = 0
-                if self.silent_chunks > int(os.getenv('SILENCE_DURATION_CHUNK')):
+                if self.silent_chunks > int(os.getenv('SILENCE_DURATION_CHUNK')) or self.command_chunks_number > int(os.getenv('MAX_CHUNKS')):
                     command = np.concat(self.command_chunks)
                     command = self.stt(command)
                     logging.info(f'Command: {command}')
@@ -94,17 +96,23 @@ class MicController:
                                                    is_split_into_words=False)
                         output = self.classifier_model.predict(torch.tensor(embedding.input_ids).unsqueeze(0),
                                                                torch.tensor(embedding.attention_mask).unsqueeze(0))
-                        intent = self.id_to_intent[torch.argmax(output[0], dim=-1).item()]
-                        command = command.split()
+                        index = torch.argmax(output[0], dim=-1).item()
                         tokens_list = []
-                        prev_id = -1
-                        for i, arg in enumerate(torch.argmax(output[1], dim=-1).flatten()):
-                            if arg in self.pr_labels and embedding.word_ids()[i] is not None and embedding.word_ids()[i] != prev_id:
-                                tokens_list.append(command[embedding.word_ids()[i]])
-                            prev_id = embedding.word_ids()[i]
+                        if output[0][0][index] > float(os.getenv('CONFIDENCE_THRESHOLD')):
+                            intent = self.id_to_intent[index]
+                            command = command.split()
+                            prev_id = -1
+                            for i, arg in enumerate(torch.argmax(output[1], dim=-1).flatten()):
+                                if arg in self.pr_labels and embedding.word_ids()[i] is not None and \
+                                        embedding.word_ids()[i] != prev_id:
+                                    tokens_list.append(command[embedding.word_ids()[i]])
+                                prev_id = embedding.word_ids()[i]
+                        else:
+                            intent = 'other'
                         self.command_chunks = []
                         self.oww_model.reset()
                         self.silent_chunks = 0
+                        self.command_chunks_number = 0
                         self.oww_recognized = False
                         return intent, tokens_list # If recognized and detected
             return False # If did not recognize oww

@@ -1,14 +1,16 @@
 import dotenv
 import os
 from pathlib import Path
+import sys
 import torch
 from transformers import AutoModel
 
 class IntentTokenClassifier(torch.nn.Module):
     def __init__(self):
         super().__init__()
-        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
-        self.bert = AutoModel.from_pretrained(os.getenv('BERT_MODEL'))
+        self.base_path = self.get_base_path()
+        dotenv.load_dotenv(self.base_path / '.env.client')
+        self.bert = AutoModel.from_pretrained(str((self.base_path / os.getenv('BERT_MODEL')).resolve()))
         for param in self.bert.parameters():
             param.requires_grad = True
         self.hidden_size = self.bert.config.hidden_size
@@ -24,6 +26,12 @@ class IntentTokenClassifier(torch.nn.Module):
             torch.nn.Dropout(float(os.getenv('DROPOUT'))),
             torch.nn.Linear(self.hidden_size, int(os.getenv('TOKENS_NUM')))
         )
+    @staticmethod
+    def get_base_path():
+        if getattr(sys, 'frozen', False):
+            return Path(getattr(sys, '_MEIPASS', ''))
+        else:
+            return Path(__file__).resolve().parent.parent
     def forward(self, input_ids, attention_mask):
         outputs = self.bert(input_ids=input_ids,
                             attention_mask=attention_mask)
