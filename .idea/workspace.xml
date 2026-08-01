@@ -9,11 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/.env.client" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/.env.client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/back/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/back/Server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/back/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/back/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/TODO.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

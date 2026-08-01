@@ -134,7 +134,10 @@ class JarvisApp:
                                         text_align=ft.TextAlign.CENTER)
 
             self.auth_dialog = ft.AlertDialog(
-                title=ft.Text('Enter code via link', size=18, weight=ft.FontWeight.BOLD),
+                modal=True,
+                title=ft.Text('Enter code via link',
+                              size=18,
+                              weight=ft.FontWeight.BOLD),
                 content=ft.Column(
                     [
                         ft.Container(height=10),
@@ -143,12 +146,22 @@ class JarvisApp:
                         ft.Text('Waiting for user action', size=10, color=ft.Colors.GREY_500, text_align=ft.TextAlign.CENTER)
                     ],
                     tight=True,
-                    horizontal_alignment=ft.CrossAxisAlignment.CENTER
-                )
+                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                ),
+                actions=[
+                    ft.TextButton(
+                        'Close',
+                        on_click=self.close_yandex_auth_dialog
+                    )
+                ]
             )
         except Exception as e:
             logging.error(e)
             sys.exit(1)
+
+    def close_yandex_auth_dialog(self, _):
+        self.auth_dialog.open = False
+        self.page.update()
 
     @staticmethod
     def hash_password(password):
@@ -237,12 +250,16 @@ class JarvisApp:
 
     async def process_yandex_auth(self, username, password):
         try:
+            if not self.auth_dialog.open:
+                return
             await asyncio.to_thread(self.client.device_auth, on_code=self.on_code)
             self.ym_token = self.client.token
             await asyncio.to_thread(self.save_user_to_db, username, password)
-            self.auth_dialog.open = False
+            self.close_yandex_auth_dialog(None)
             self.show_main_screen()
         except Exception as e:
+            if not self.auth_dialog.open:
+                return
             logging.error(f'Yandex auth error: {e}')
             self.ym_link_btn.content = 'Authorization error'
             self.ym_link_btn.disabled = True
@@ -273,6 +290,8 @@ class JarvisApp:
 
             self.page.window.prevent_close = True
             self.page.window.on_event = self.window_event_handler
+
+            self.page.overlay.append(self.auth_dialog)
 
             self.show_auth_screen()
         except Exception as e:
@@ -329,7 +348,6 @@ class JarvisApp:
                 self.ym_link_btn.url = ''
                 self.ym_code_text.value = ''
 
-                self.page.overlay.append(self.auth_dialog)
                 self.auth_dialog.open = True
                 self.auth_btn.disabled = False
                 self.page.update()
