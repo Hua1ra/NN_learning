@@ -9,6 +9,7 @@ import random
 
 class YMController:
     def __init__(self, client, device):
+        # Load .env.client parameters
         dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         self.client = client # Client for yandex_music requests
         self.device = device # Current user device
@@ -61,9 +62,11 @@ class YMController:
         self.current_queue = self.__get_search_batch(query, 'playlist')
 
     def play_favorite_batch(self):
+        # Get all favourite tracks
         self.current_queue = self.__get_favorite_batch()
 
     def play_wave(self):
+        # Set the station to wave and play it
         self.set_station('user:onion')
 
     def set_station(self, current_station_id):
@@ -72,6 +75,7 @@ class YMController:
         self.current_queue = self.__get_radio_batch()
 
     def get_link(self, track_id):
+        # Get the link of the track
         try:
             return self.client.tracks_download_info(track_id=track_id, get_direct_links=True)[0]['direct_link']
         except Exception as e:
@@ -79,12 +83,14 @@ class YMController:
             sys.exit(1)
 
     def like(self, track_id):
+        # Like current track
         try:
             self.client.users_likes_tracks_add(track_id)
         except Exception as e:
             logging.error(e)
 
     def dislike(self, track_id):
+        # Dislike current track
         try:
             self.client.users_likes_tracks_remove(track_id)
         except Exception as e:
@@ -93,12 +99,14 @@ class YMController:
     def __get_radio_batch(self, queue=None):
         # Get the new batch from the current radio.
         try:
+            # Save a batch of previous tracks
             if self.current_queue is None or self.current_queue == []:
                 old_tracks = []
             else:
                 start = max(self.batch_index + 1 - int(os.getenv('LAST_TRACKS_COUNT')), 0)
                 old_tracks = self.current_queue[start : self.batch_index + 1]
             self.batch_index = len(old_tracks) - 1
+            # Get a batch of new tracks
             new_tracks = [item.track for item in self.client.rotor_station_tracks(self.current_station_id, queue=queue).sequence]
         except Exception as e:
             logging.error(e)
@@ -108,12 +116,14 @@ class YMController:
     def __get_favorite_batch(self):
         # Get the new batch from the favourite playlist.
         try:
+            # Save a batch of previous tracks
             if self.current_queue is None or self.current_queue == []:
                 old_tracks = []
             else:
                 start = max(self.batch_index + 1 - int(os.getenv('LAST_TRACKS_COUNT')), 0)
                 old_tracks = self.current_queue[start: self.batch_index + 1]
             self.batch_index = len(old_tracks) - 1
+            # Get a batch of new tracks
             new_tracks = [item.id for item in self.client.users_likes_tracks()]
             new_tracks = self.client.tracks(new_tracks)
             random.shuffle(new_tracks)
@@ -124,6 +134,7 @@ class YMController:
 
     def __get_search_batch(self, query, target):
         try:
+            # Get a batch of new tracks based on the query
             if self.current_queue is None or self.current_queue == []:
                 old_tracks = []
             else:

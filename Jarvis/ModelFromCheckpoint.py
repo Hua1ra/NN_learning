@@ -8,12 +8,14 @@ from Jarvis.src.BERT import IntentTokenClassifier
 
 
 
+# Get the base path
 def get_base_path():
     if getattr(sys, 'frozen', False):
         return Path(getattr(sys, '_MEIPASS', ''))
     else:
         return Path(__file__).resolve().parent.parent
 
+# Get the model from checkpoint
 def get_model_from_checkpoint(start_path, end_path):
     checkpoint = torch.load(start_path)
     classifier_model = IntentTokenClassifier()
@@ -24,6 +26,7 @@ def get_model_from_checkpoint(start_path, end_path):
 
 
 
+# Save only the model
 def main():
     dotenv.load_dotenv(Path(__file__).resolve().parent / '.env.client')
     basic_path = get_base_path()

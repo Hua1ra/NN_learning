@@ -13,6 +13,9 @@ from Jarvis.src.BERT import IntentTokenClassifier
 from Jarvis.src.Loss import Loss
 from Jarvis.src.RequestsDataset import RequestsDataset
 
+
+
+# Train the model for 1 epoch
 def train_epoch(model,
                 dataloader,
                 criterion,
@@ -21,8 +24,10 @@ def train_epoch(model,
                 loss_dynamic):
     model.train()
     total_epoch_loss = 0
+    # Get the data
     for i, (input_ids, attention_mask, (intent, labels)) in tqdm.tqdm(enumerate(dataloader),
                                                                                       postfix='Training'):
+        # Forward
         input_ids = input_ids.to(device)
         attention_mask = attention_mask.to(device)
         intent = intent.to(device)
@@ -30,12 +35,14 @@ def train_epoch(model,
 
         predicted_intent, predicted_labels = model(input_ids, attention_mask)
         loss = criterion(predicted_intent, predicted_labels, intent, labels)
+        # Backward
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
         total_epoch_loss += loss.item()
     loss_dynamic.append(total_epoch_loss / len(dataloader))
 
+# Validate the latest model
 def validate_epoch(model,
                    dataloader,
                    device,
@@ -44,7 +51,7 @@ def validate_epoch(model,
     true_predicted_intent = []
     true_labels = []
     true_predicted_labels = []
-
+    # Forward
     model.eval()
     with torch.no_grad():
         for i, (input_ids, attention_mask, (intent, labels)) in tqdm.tqdm(enumerate(dataloader),
@@ -58,7 +65,7 @@ def validate_epoch(model,
             intent = intent.cpu().flatten().tolist()
             predicted_labels = torch.argmax(predicted_labels, dim=-1).cpu().flatten().tolist()
             labels = labels.cpu().flatten().tolist()
-
+            # Save metrics
             for j in range(len(intent)):
                 true_intent.append(intent[j])
                 true_predicted_intent.append(predicted_intent[j])
@@ -87,6 +94,7 @@ def validate_epoch(model,
     loss_dynamic[0].append((intent_precision, intent_recall))
     loss_dynamic[1].append((labels_precision, labels_recall))
 
+# Plot metrics
 def plot(train_loss_dynamic,
          test_loss_dynamic):
     x_list = [i + 1 for i in range(len(train_loss_dynamic))]
@@ -118,6 +126,7 @@ def plot(train_loss_dynamic,
     plt.savefig(os.getenv('TEST_R'))
     plt.close()
 
+# Save checkpoint
 def save_model(model,
                optimizer,
                device,
@@ -136,7 +145,9 @@ def save_model(model,
 
 
 
+# Load all the components and train the model
 def main(checkpoint_path=None):
+    # Load basic components
     dotenv.load_dotenv(Path(__file__).resolve().parent / '.env.client')
     device = 'cpu'
     if torch.cuda.is_available():
@@ -163,6 +174,7 @@ def main(checkpoint_path=None):
     test_loss_dynamic = [[], []]
     start_epoch = 0
 
+    # Load components from the checkpoint
     if checkpoint_path is not None:
         checkpoint = torch.load('./models/' + checkpoint_path + '.pth')
         model.load_state_dict(checkpoint['model'])
@@ -173,6 +185,7 @@ def main(checkpoint_path=None):
         start_epoch = checkpoint['last_epoch'] + 1
         del checkpoint
 
+    # Training
     for epoch in range(start_epoch, epochs):
         train_epoch(model,
                     train_dataloader,

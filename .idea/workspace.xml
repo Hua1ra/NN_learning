@@ -9,7 +9,20 @@
   <component name="ChangeListManager">
     <list default="true" id="9396afdd-635e-422c-b937-d9b6c61561e3" name="Changes" comment="face_id project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/.env.client" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/.env.client" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/FineTuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/FineTuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/Jarvis.spec" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/Jarvis.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/ModelFromCheckpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/ModelFromCheckpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/back/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/back/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/documentation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/AudioController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/AudioController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/BERT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/BERT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/Brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Brain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/Loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/Loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/MicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/MicController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/RequestsDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/RequestsDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jarvis/src/YMController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis/src/YMController.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +120,7 @@
     "Python.data_test.executor": "Run",
     "Python.datatest.executor": "Run",
     "Python.db_admin.executor": "Run",
+    "Python.ee.executor": "Run",
     "Python.fastapi_test.executor": "Run",
     "Python.gen.executor": "Run",
     "Python.main.executor": "Run",
@@ -171,6 +185,9 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

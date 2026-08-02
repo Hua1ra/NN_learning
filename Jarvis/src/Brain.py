@@ -15,9 +15,12 @@ from src.MicController import MicController #type: ignore
 from src.YMController import YMController #type: ignore
 
 
+
 class Brain:
     def __init__(self, token, device):
-        dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
+        # Load .env.client parameters
+        self.basic_path = self.get_base_path()
+        dotenv.load_dotenv(self.basic_path / '.env.client')
         try:
             self.token = token
             self.device = device
@@ -29,17 +32,22 @@ class Brain:
                 logging.error(e)
                 raise BadRequestError('Internet connection error')
 
+            # Controller for yandex music requests
             self.ymcontroller = YMController(self.client, self.device)
             self.device = device
 
+            # Controller for audio manipulation
             self.audiocontroller = AudioController()
             self.event_manager = self.audiocontroller.player.event_manager()
 
+            # Controller for microphone
             self.miccontroller = MicController()
 
-            self.basic_path = self.get_base_path()
+            # Available radio
             with open((self.basic_path / os.getenv('RADIO_PATH')).resolve(), 'r') as j:
                 self.radio = json.load(j)
+
+            # Service variables
             self.is_track_ended = False
             self.was_playing = False
             self.event_manager.event_attach(getattr(vlc.EventType, 'MediaPlayerEndReached'), self.track_ended)
@@ -49,6 +57,7 @@ class Brain:
             logging.error(e)
             raise Exception('Initialization error')
 
+    # Get the base path
     @staticmethod
     def get_base_path():
         if getattr(sys, 'frozen', False):
@@ -57,6 +66,7 @@ class Brain:
             return Path(__file__).resolve().parent.parent
 
     def processor(self, intent, tokens=None):
+        # Execute the function with necessary tokens
         has_params = (intent in ('play_track', 'play_artist', 'play_album', 'play_playlist', 'set_volume'))
         try:
             method = getattr(self, intent)
@@ -68,6 +78,7 @@ class Brain:
             logging.error(e)
 
     def play_track(self, tokens):
+        # Search for the track and play it
         query = ' '.join(tokens)
         logging.info(f'Searching track {query}')
         queue_copy = self.ymcontroller.current_queue.copy()
@@ -76,6 +87,7 @@ class Brain:
             self.track_next()
 
     def play_artist(self, tokens):
+        # Search for the artist and play tracks
         query = ' '.join(tokens)
         logging.info(f'Searching artist {query}')
         queue_copy = self.ymcontroller.current_queue.copy()
@@ -84,6 +96,7 @@ class Brain:
             self.track_next()
 
     def play_album(self, tokens):
+        # Search for the track and play tracks
         query = ' '.join(tokens)
         logging.info(f'Searching album {query}')
         queue_copy = self.ymcontroller.current_queue.copy()
@@ -92,6 +105,7 @@ class Brain:
             self.track_next()
 
     def play_playlist(self, tokens):
+        # Search for the playlist and play tracks
         query = ' '.join(tokens)
         logging.info(f'Searching playlist {query}')
         queue_copy = self.ymcontroller.current_queue.copy()
@@ -100,23 +114,27 @@ class Brain:
             self.track_next()
 
     def play_wave(self):
+        # Play user's wave
         logging.info('Playing wave')
         self.ymcontroller.play_wave()
         self.track_next()
 
     def play_favourite(self):
+        # Play user's favourite tracks
         logging.info('Playing favourite')
         self.ymcontroller.play_favorite_batch()
         if len(self.ymcontroller.current_queue) > 0:
             self.track_next()
 
     def play_random_radio(self):
+        # Select a random radio and play tracks
         radio = self.radio[str(random.randint(0, int(os.getenv('RADIO_NUMBER')) - 1))]
         logging.info(f'Playing radio {radio}')
         self.ymcontroller.set_station(radio)
         self.track_next()
 
     def track_next(self):
+        # Play next track in the batch
         self.is_track_ended = False
         track = self.ymcontroller.play_next()
         logging.info(f'Playing track: {track.title}')
@@ -128,6 +146,7 @@ class Brain:
         logging.info(f'Index: {self.ymcontroller.batch_index}')
 
     def track_prev(self):
+        # Play previous track in the batch if possible
         self.is_track_ended = False
         track = self.ymcontroller.play_prev()
         logging.info(f'Playing track: {track.title}')
@@ -139,34 +158,42 @@ class Brain:
         logging.info(f'Index: {self.ymcontroller.batch_index}')
 
     def track_pause(self):
+        # Pause current track
         if self.audiocontroller.player.is_playing():
             logging.info('Pause')
             self.audiocontroller.pause()
 
     def track_resume(self):
+        # Resume current track
         if not self.audiocontroller.player.is_playing():
             logging.info('Resume')
             self.audiocontroller.pause()
             self.was_playing = False
 
     def volume_up(self):
+        # Turn up the volume by 5
         self.audiocontroller.volume_up()
 
     def volume_down(self):
+        # Turn down the volume by 5
         self.audiocontroller.volume_down()
 
     def set_volume(self, tokens):
+        # Set the exact volume
         self.audiocontroller.set_volume(int(' '.join(tokens)))
 
     def like(self):
+        # Like current track
         logging.info('Like')
         self.ymcontroller.like(self.ymcontroller.current_track.id)
 
     def dislike(self):
+        # Dislike current track
         logging.info('Dislike')
         self.ymcontroller.dislike(self.ymcontroller.current_track.id)
 
     def ask_current_track(self):
+        # Return the info about current track playing
         logging.info('Asking current track')
         if self.ymcontroller.current_track is not None and self.audiocontroller.player.is_playing():
             return {
@@ -180,44 +207,56 @@ class Brain:
 
     @staticmethod
     def other():
+        # Undefined command
         logging.info('Undefined command')
         return 'undefined command'
 
     def abort(self):
+        # Exit
         self.audiocontroller.exit()
 
     def track_ended(self, _):
+        # Event track ended
         logging.info('Track ended')
         self.is_track_ended = True
 
     def listen(self, audio_chunk):
         # Process audio chunk
         try:
+            # Get the result from mic controller
             result = self.miccontroller.listen(audio_chunk)
+            # If the wake word is recognized
             if result is True:
                 if self.audiocontroller.player.is_playing():
                     self.track_pause()
                     self.was_playing = True
                 return 'Recognized', None
+            # If the wake word was not recognized
             elif result is False:
+                # Track ended signal
                 return 'None', self.is_track_ended
             else:
+                # If the command was recognized
                 intent, tokens = result
                 logging.info(intent + ' ' + ' '.join(tokens))
+                # If the intent == 'exit'
                 if intent == 'exit':
                     logging.info('Exit')
                     return intent, 'exit'
+                # If the intent == 'ask_current_track'
                 elif intent == 'ask_current_track':
                     if self.was_playing:
                         self.track_resume()
                         self.was_playing = False
                     return intent, self.ask_current_track()
+                # If the intent == 'other'
                 elif intent == 'other':
                     if self.was_playing:
                         self.track_resume()
                         self.was_playing = False
                     return intent, self.other()
                 else:
+                    # Process the command otherwise
                     self.processor(intent, tokens)
                     if intent != 'track_pause' and self.was_playing:
                         self.track_resume()

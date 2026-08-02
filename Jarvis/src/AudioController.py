@@ -9,6 +9,7 @@ import vlc
 
 class AudioController:
     def __init__(self):
+        # Load .env.client parameters
         dotenv.load_dotenv(Path(__file__).resolve().parent.parent / '.env.client')
         try:
             self.instance = vlc.Instance()
@@ -18,6 +19,7 @@ class AudioController:
             logging.error(e)
             sys.exit(1)
 
+    # Play track from a direct link
     def play(self, direct_link):
         try:
             media = self.instance.media_new(direct_link)
@@ -26,12 +28,14 @@ class AudioController:
         except Exception as e:
             logging.error(e)
 
+    # Pause / resume track
     def pause(self):
         try:
             self.player.pause()
         except Exception as e:
             logging.error(e)
 
+    # Volum up +5
     def volume_up(self):
         try:
             self.volume = min(self.player.audio_get_volume() + int(os.getenv('VOLUME_STEP')), int(os.getenv('VOLUME_MAX')))
@@ -40,6 +44,7 @@ class AudioController:
         except Exception as e:
             logging.error(e)
 
+    # Volume down -5
     def volume_down(self):
         try:
             self.volume = max(self.player.audio_get_volume() - int(os.getenv('VOLUME_STEP')), int(os.getenv('VOLUME_MIN')))
@@ -48,6 +53,7 @@ class AudioController:
         except Exception as e:
             logging.error(e)
 
+    # Set the exact volume
     def set_volume(self, tokens):
         try:
             self.volume = min(max(int(tokens), int(os.getenv('VOLUME_MIN'))), int(os.getenv('VOLUME_MAX')))
@@ -56,6 +62,7 @@ class AudioController:
         except Exception as e:
             logging.error(e)
 
+    # Close all instances
     def exit(self):
         try:
             logging.info('Aborting')

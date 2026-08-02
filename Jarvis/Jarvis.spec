@@ -49,7 +49,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    version='C:\\Users\\korol\\AppData\\Local\\Temp\\330b94d3-fa47-47a4-a0a2-4a1b54f2c6da',
+    version='C:\\Users\\korol\\AppData\\Local\\Temp\\71d111ab-04f7-42dd-a881-9ac92dfcb25f',
 )
 coll = COLLECT(
     exe,
